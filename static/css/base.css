@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+#homepage-header {
+    background: url('/media/homepage.jpg') no-repeat center;
+    height: 800px;
+    background-size: cover;
+    margin-bottom: 45px;
+}
