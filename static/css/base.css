@@ -61,6 +61,28 @@ html {
     text-decoration: none;
 }
 
+.navbar {
+    margin-left: 19rem;
+}
+
+#delivery-banner {
+    background: var(--color-green);
+    text-transform: uppercase;
+}
+
+#main-nav {
+    top: 50px;
+}
+
+#main-nav .nav-link {
+    padding-right: 55px;
+    font-size: 1.2rem;
+}
+
+#user-options {
+    padding-left: 55px;
+}
+
 #homepage-header {
     background: url('/media/homepage.jpg') no-repeat center;
     height: 800px;
