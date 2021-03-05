@@ -113,7 +113,7 @@ html {
 /*------ Homepage ------*/
 
 #homepage-header {
-    background: url('/media/homepage.jpg') no-repeat center;
+    background: url('/media/homepage/homepage.jpg') no-repeat center;
     height: 800px;
     background-size: cover;
     margin-bottom: 4.5rem;
@@ -135,6 +135,50 @@ html {
     font-family: var(--font-great-vibes);
 }
 
+#hp-header {
+    font-weight: 100;
+    font-size: 70px;
+    color: var(--color-light-black);
+    font-family: var(--font-great-vibes);
+    line-height: 1rem;
+}
+
 .header-content {
     margin-top: 30%;
+}
+
+/*------ Homepage/section-1 ------*/
+.home-decor{
+    text-align: center;
+    font-family: var(--font-great-vibes);
+    color: var(--color-light-black);
+    font-size: 3rem;
+}
+
+.new {
+    text-align: center;
+    font-size: 3.3rem;
+    line-height: 1rem;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+}
+
+.homepage-cards {
+    height: 400px;
+    margin-top: 2rem;
+}
+
+.product-card-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.product-card-price{
+    text-align: center;
+    line-height: .1rem;
 }

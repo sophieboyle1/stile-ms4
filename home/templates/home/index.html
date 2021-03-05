@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
+{% block head_content %}
     <div id="homepage-header">
         <div class="container">
             <div class="row">
@@ -11,7 +11,8 @@
                     <div class="header-content ml-auto">
                         <div class="header-text">
                             <h1 id="hp-header-h1">STILE</h1>
-                            <p id="hp-header-tagline">Add a special touch <br>to your home</p>
+                            <p id="hp-header-tagline">Add a special touch </p>
+                            <p id="hp-header">to your home</p>
                         </div>
                         <!--<div class="line ml-auto"></div>
                         <div class="ml-auto" id="hp-header-cta">
@@ -22,4 +23,10 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
+    {% include 'home/includes/hp-section-1.html' %}
+    {% include 'home/includes/hp-section-2.html' %}
+    {% include 'home/includes/hp-section-3.html' %}
 {% endblock %}
