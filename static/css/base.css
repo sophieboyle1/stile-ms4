@@ -91,7 +91,7 @@ html {
 
 /*------ Buttons ------*/
 
-/*.cta {
+.cta {
     font-size: 14px;
     text-transform: uppercase;
     padding: 15px 30px;
@@ -108,7 +108,7 @@ html {
     background-color: var(--color-brown);
     color: var(--color-white);
     text-decoration: none;
-}*/
+}
 
 /*------ Homepage ------*/
 
@@ -182,3 +182,22 @@ html {
     text-align: center;
     line-height: .1rem;
 }
+
+/* homepage section2 */
+.hp-section-2 {
+    background: url('/media/homepage/section-2.png') no-repeat center;
+}
+
+.div-section-text-right {
+    margin-top: 50px;
+}
+
+.section-title, .section-p, .section-cta {
+    margin: 50px 0;
+}
+
+.div-section-img-left img {
+    width: 100%;
+}
+
+
