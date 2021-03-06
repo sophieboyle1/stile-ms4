@@ -37,14 +37,25 @@ html {
 /*------ Nav Bar ------*/
 
 .nav-link {
-    color: var(--color-black);
-    font-family: var(--font-poppins);
     text-transform: uppercase;
-    float: right !important;
-    padding-left: 10rem;
+    color: var(--color-black);
+    line-height: 1rem;
+    font-size: 1.2rem;
 }
 
-.nav-link:hover {
+.fa-shopping-cart:before {
+    font-size: 1.7rem;
+}
+
+.form-control {
+    border: none;
+}
+
+.border-black {
+    border: var(--border-black);
+} 
+
+.nav-link:hover, .nav-link-main:hover {
     text-decoration: underline;
     color: var(--color-black);
 }
@@ -67,8 +78,10 @@ html {
     text-decoration: none;
 }
 
-.navbar {
-    margin-left: 19rem;
+.nav-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #delivery-banner {
@@ -76,17 +89,14 @@ html {
     text-transform: uppercase;
 }
 
-#main-nav {
-    top: 50px;
-}
-
-#main-nav .nav-link {
+.nav-link-main {
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-size: 1.6rem;
     padding-right: 55px;
-    font-size: 1.2rem;
-}
-
-#user-options {
-    padding-left: 55px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*------ Buttons ------*/
@@ -118,7 +128,6 @@ html {
     height: 800px;
     background-size: cover;
     margin-bottom: 4.5rem;
-    margin-top: 7rem;
 }
 
 #hp-header-h1 {
