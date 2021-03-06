@@ -149,6 +149,7 @@ html {
 }
 
 /*------ Homepage/section-1 ------*/
+
 .home-decor{
     text-align: center;
     font-family: var(--font-great-vibes);
@@ -162,14 +163,14 @@ html {
     line-height: 1rem;
 }
 
-.center {
+.center , .center-3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1.5rem;
 }
 
-.homepage-cards {
+.homepage-cards, .homepage-cards-3 {
     height: 400px;
     margin-top: 2rem;
 }
@@ -214,5 +215,27 @@ h2 {
 
 .container-trends {
     margin-top: 3rem;
+    margin-bottom: 4.5rem;
 }
+
+/*------ Homepage/section-3 ------*/
+
+.hp-section-3-heading {
+    margin-bottom: 35px;
+}
+
+.category-card-row {
+    margin: 35px 0;
+}
+
+.div-category-card-img {
+    height: fit-content;
+    width: 165px;
+    margin: 20px auto 0 auto;
+}
+
+.div-product-card-img img, .div-category-card img {
+    width: 100%;
+}
+
 
