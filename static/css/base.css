@@ -326,4 +326,22 @@ footer p {
     width: 11.5rem;
 }
 
+#sort-selector {
+    height: 45px;
+    width: 250px;
+    border: var(--border-black);
+    color: var(--color-black);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 5%;
+    outline: none;
+}
+
+.dropdown-sort-products {
+    margin-top: 37px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
 /*------ Products Details Page ------*/
