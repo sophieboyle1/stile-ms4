@@ -372,3 +372,36 @@ footer p {
 }
 
 /*------ Products Details Page ------*/
+
+#accordion {
+    margin: 35px auto 50px auto;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: var(--color-white);
+    border-bottom: var(--border-black);
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    color: var(--color-black);
+}
+
+.product-details-additional {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 18px;
+    width: fit-content;
+    display: block;
+    float: left;
+    color: var(--color-black);
+}
+
+.accordion-card-paragraph {
+    font-size: 14px;
+    line-height: 170%;
+}

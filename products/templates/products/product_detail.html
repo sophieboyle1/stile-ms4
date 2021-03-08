@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Product information -->
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
@@ -37,6 +38,45 @@
                 <p class="mt-3">{{ product.description }}</p>
                 <div>
                     <img src="/media/seperater.png" alt="no-image" class="nav-center-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Accrdion for shipping/returns -->
+<div class="container">
+    <div class="row row-shipping">
+        <div class="col-10">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <h3 class="product-details-additional">Shipping & Return details</h3>
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="accordion-card-paragraph">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries
+                            </p>
+                            <p class="accordion-card-paragraph">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries
+                            </p>
+                            <p class="accordion-card-paragraph">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
