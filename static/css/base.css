@@ -315,6 +315,7 @@ footer p {
     color: var(--color-olive);
     font-weight: 600;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding-top: .6rem;
+    text-transform: uppercase;
 }
 
 .row-products {
@@ -324,3 +325,5 @@ footer p {
 .head-flowers {
     width: 11.5rem;
 }
+
+/*------ Products Details Page ------*/
