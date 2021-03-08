@@ -322,9 +322,15 @@ footer p {
     background-color: var(--color-light-green);
 }
 
+.offset-1 {
+    margin-top: 2.5rem;
+}
+
 .head-flowers {
     width: 11.5rem;
 }
+
+/*------ Products Page/Sort By Box ------*/
 
 #sort-selector {
     height: 45px;
@@ -342,6 +348,27 @@ footer p {
     display: flex;
     -webkit-box-pack: end;
     justify-content: flex-end;
+}
+
+/*------ Products Page/breadcrumbs------*/
+
+.breadcrumbs {
+    margin-top: 50px;
+}
+
+.breadcrumb-link, .breadcrumb-link:hover {
+    color: var(--color-green);
+    margin: 3px;
+}
+
+.active-breadcrumb {
+    color: var(--color-black);
+    margin: 3px;
+}
+
+.breadcrumbs-text {
+    text-transform: uppercase;
+    font-size: 1.1rem;
 }
 
 /*------ Products Details Page ------*/
