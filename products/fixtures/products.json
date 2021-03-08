@@ -29,13 +29,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5001730010",
-         "name":"Bronze Vase",
+         "name":"Rug kystmaure",
          "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price": 10.00,
-         "category":1,
+         "price": 45.00,
+         "category":4,
          "rating":4.8,
          "image_url":null,
-         "image":"section-111.jpg"
+         "image":"rug-2.jpg"
       }
    },
    {
@@ -79,6 +79,188 @@
          "image_url": null,
          "image":"rug-1.jpg"
       }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600429",
+         "name":"Rag Rug Rose",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":17.99,
+         "category":4,
+         "rating":5.00,
+         "image_url": null,
+         "image":"rug-3.jpg"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600430",
+         "name":"Rug Pappalina",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":5.00,
+         "category":4,
+         "rating":4,
+         "image_url": null,
+         "image":"rug-4.jpg"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600431",
+         "name":"Country House Mirror",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":3,
+         "rating":4.3,
+         "image_url": null,
+         "image":"mirror-2.jpg"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600432",
+         "name":"Distressed Mirror",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":78.00,
+         "category":3,
+         "rating":4.6,
+         "image_url": null,
+         "image":"mirror-3.jpg"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600433",
+         "name":"Standford Mirror",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":85,
+         "category":3,
+         "rating":4.6,
+         "image_url": null,
+         "image":"mirror-4.jpg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600434",
+         "name":"Wooden Frame Mirror",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":125.00,
+         "category":3,
+         "rating":4.6,
+         "image_url": null,
+         "image":"mirror-5.jpg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600435",
+         "name":"Charm Mirror",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":144.99,
+         "category":3,
+         "rating":4.5,
+         "image_url": null,
+         "image":"mirror-6.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600436",
+         "name":"Large Moss Cushion",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":25.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"cushion-2.png"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600437",
+         "name":"Marquise Cushion",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":21.00,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"cushion-3.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600438",
+         "name":"Florie Cushion",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":23.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"cushion-4.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600439",
+         "name":"Histoire Cushion",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":25.99,
+         "category":2,
+         "rating":4.8,
+         "image_url": null,
+         "image":"cushion-5.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600440",
+         "name":"Bine Cushion",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":19.99,
+         "category":2,
+         "rating":4.5,
+         "image_url": null,
+         "image":"cushion-6.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600441",
+         "name":"Faux Eucalyptus Wreath",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":30.00,
+         "category":1,
+         "rating":4.3,
+         "image_url": null,
+         "image":"walldecor-2.jpg"
+      }
    }
-      
-]
+] 
+
