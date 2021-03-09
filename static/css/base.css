@@ -414,7 +414,7 @@ footer p {
     padding: 30px;
     max-width: 600px;
     text-align: center;
-    overflow-wrap: break-word;
+    font-size: 1.2rem;
 }
 
 .breadcrumbs-text-cart {
