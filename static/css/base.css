@@ -311,6 +311,7 @@ footer p {
 /*------ Products Page ------*/
 
 .logo-font {
+    letter-spacing: .1rem;
     font-size: 3rem;
     color: var(--color-olive);
     font-weight: 600;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -404,4 +405,20 @@ footer p {
 .accordion-card-paragraph {
     font-size: 14px;
     line-height: 170%;
+}
+
+/*------ Empty Cart Page ------*/
+
+.empty-cart {
+    margin: auto;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.breadcrumbs-text-cart {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-left: 5rem;
 }

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!--- Header --->
+<div class="container-fluid-vh-100">
+    <div class="row-products">
+        <div class="col text-center pb-1">
+            <h2 class="logo-font">Shopping Cart</h2>
+            <img src="/media/flowers.png" alt="flowers" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
+        </div>
+    </div>
+    <!--- Breadcrumbs --->
+    <div class="row shop-top-row">
+        <div class="col-12">
+            <div class="breadcrumbs">
+                <p class="breadcrumbs-text-cart">
+                    <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+                    |
+                    <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
+                    |
+                    <span class="active-breadcrumb">Shopping cart</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--- Empty cart --->
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+            <div class="table-responsive rounded"></div>
+            {% else %}
+            <p class="empty-cart">You haven't added any products to your cart yet. Check out what we have in our shop!
+            </p>
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <a href="{% url 'products' %}" class="cta cta-black">Shop here</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
