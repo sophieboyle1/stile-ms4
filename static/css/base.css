@@ -422,3 +422,31 @@ footer p {
     font-size: 1.1rem;
     margin-left: 5rem;
 }
+
+/*------ Responsiveness ------*/
+
+@media (max-width: 375px){
+.navbar-light .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.nav-center {
+    padding-top: 1rem;
+}
+}
+
+@media (max-width: 768px){
+    .nav-center {
+    padding-top: 1rem;
+}
+}
+
+@media (max-width: 991px){
+    .nav-center {
+    padding-top: 1rem;
+}
+}
