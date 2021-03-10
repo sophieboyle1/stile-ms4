@@ -441,6 +441,11 @@ footer p {
     padding: 1rem;
 }
 
+.input-group-product-quantity {
+    border: var(--border-black);
+    width: 120px;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
