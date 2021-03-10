@@ -446,6 +446,18 @@ footer p {
     width: 120px;
 }
 
+.update-link ,.remove-item {
+    cursor: pointer;
+}
+
+.remove-item {
+    padding-left: 3.5rem;
+}
+
+.form-group-buttons {
+    margin-bottom: .3rem;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){

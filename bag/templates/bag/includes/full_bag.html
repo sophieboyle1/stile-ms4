@@ -24,7 +24,14 @@
                         <p class="my-0">${{ item.product.price }}</p>
                     </td>
                     <td class="py-3 w-25">
-                        <p class="my-0">{{ item.quantity }}</p>
+                        <div class="form-group-buttons">
+                            <div class="input-group input-group-product-quantity">
+                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
+                                    max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                            </div>
+                        </div>
+                        <a class="update-link text-info"><small>Update</small></a>
+                        <a class="remove-item" id="remove_{{ item.item_id }}"><i class="far fa-trash-alt"></i></a>
                     </td>
                     <td class="py-3">
                         <p class="my-0">${{ item.product.price }}</p>
