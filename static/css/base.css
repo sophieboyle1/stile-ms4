@@ -386,6 +386,7 @@ footer p {
     background-color: var(--color-white);
     border-bottom: var(--border-black);
     cursor: pointer;
+    padding-left: 0;
 }
 
 .btn-link:hover {
