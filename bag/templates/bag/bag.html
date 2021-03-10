@@ -3,7 +3,7 @@
 
 {% block content %}
 <!--- Header --->
-<div class="container-fluid-vh-100">
+<div class="container-fluid">
     <div class="row-products">
         <div class="col text-center pb-1">
             <h2 class="logo-font">Shopping Cart</h2>
@@ -26,12 +26,8 @@
         </div>
     </div>
     <!--- Empty cart --->
-    <div class="row">
-        <div class="col">
             {% if bag_items %}
-            <div class="table-responsive rounded">
-                {{ bag_items }}
-            </div>
+            {% include 'bag/includes/full_bag.html' %}
             {% else %}
             <p class="empty-cart">You haven't added any products to your cart yet. Check out what we have in our shop!
             </p>
@@ -43,5 +39,5 @@
             {% endif %}
         </div>
     </div>
-</div>
+
 {% endblock %}
