@@ -361,6 +361,7 @@ footer p {
 
 .breadcrumbs {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .breadcrumb-link, .breadcrumb-link:hover {
@@ -501,6 +502,34 @@ footer p {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/*------ Checkout page ------*/
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.submit-button .cta-white {
+    margin-left: .5rem;
+    margin-right: 4rem;
+}
+
+fieldset .form-control, #card-element {
+    width: 91%;
+}
+
+.small {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 
 /*------ Responsiveness ------*/
 
