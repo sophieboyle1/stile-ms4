@@ -130,6 +130,7 @@ html {
     background-color: var(--color-light-green);
     color: var(--color-black);
     text-decoration: none;
+    margin-right: .5rem;
 }
 
 /*------ Homepage ------*/
@@ -517,7 +518,6 @@ footer p {
 }
 
 .submit-button .cta-white {
-    margin-left: .5rem;
     margin-right: 4rem;
 }
 
