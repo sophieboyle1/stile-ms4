@@ -458,6 +458,23 @@ footer p {
     margin-bottom: .3rem;
 }
 
+/*------ Toasts ------*/
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
