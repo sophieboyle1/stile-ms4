@@ -55,11 +55,12 @@
                         </td>
                         <td class="py-3 w-25">
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                {% csrf_token %}
                                 <div class="form-group-buttons">
                                     <div class="input-group input-group-product-quantity">
                                         <input class="form-control qty_input" type="number" name="quantity"
                                             value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
+                                            id="id_qty_{{ item.item_id }}">
                                     </div>
                                 </div>
                             </form>
@@ -125,12 +126,14 @@
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function (e) {
+        console.log("Update click")
         var form = $(this).prev('.update-form');
         form.submit();
     })
 
     // Remove item and reload on click
     $('.remove-item').click(function (e) {
+        console.log("Remove click")
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
