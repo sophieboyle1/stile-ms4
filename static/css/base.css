@@ -475,6 +475,33 @@ footer p {
     height: 2px;
 }
 
+.btn-block {
+    background-color: var(--color-brown);
+    color: var(--color-white);
+}
+
+.btn-block:hover {
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
