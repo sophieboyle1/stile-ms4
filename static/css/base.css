@@ -322,7 +322,8 @@ footer p {
     font-size: 3rem;
     color: var(--color-olive);
     font-weight: 600;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    padding-top: .6rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -529,6 +530,28 @@ fieldset .form-control, #card-element {
     font-size: 1.1rem;
     font-weight: 400;
 }
+
+/*------ About page ------*/
+
+.about-heading {
+    text-transform: uppercase;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+}
+
+.nav-center-2 {
+    padding-left: 1rem;
+}
+
+.about-image {
+   padding:15px;
+   border:2px solid var(--color-brown);
+}
+
 
 
 /*------ Responsiveness ------*/
