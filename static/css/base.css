@@ -175,12 +175,12 @@ html {
     text-align: center;
     font-family: var(--font-great-vibes);
     color: var(--color-light-black);
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 .new {
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 3.1rem;
     line-height: 1rem;
 }
 
@@ -552,7 +552,54 @@ fieldset .form-control, #card-element {
    border:2px solid var(--color-brown);
 }
 
+/* taken from https://freefrontend.com/bootstrap-testimonials/ */
+#demo {
+    background: linear-gradient(112deg, #ffffff 50%, #E6EFD6 50%);
+    max-width: 900px;
+    margin: auto
+}
 
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem;
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.fa-arrow-right:before, .fa-arrow-left:before {
+    background-color: #8D6346;
+    padding: 1.4rem;
+} 
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset;
+}
 
 /*------ Responsiveness ------*/
 
@@ -565,10 +612,6 @@ fieldset .form-control, #card-element {
     border: 1px solid transparent;
     border-radius: .25rem;
 }
-.nav-center {
-    padding-top: 1rem;
-}
-}
 
 @media (max-width: 768px){
     .nav-center {
@@ -580,4 +623,40 @@ fieldset .form-control, #card-element {
     .nav-center {
     padding-top: 1rem;
 }
+}
+
+@media(max-width:767px) {
+    .fa-arrow-right:before, .fa-arrow-left:before {
+        padding: 0.8rem;
+    }
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
 }
