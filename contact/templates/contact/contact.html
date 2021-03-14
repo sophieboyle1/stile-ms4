@@ -52,4 +52,10 @@
 
 {% block postloadjs %}
 {{ block.super }}
+    <script>
+map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: 53.4129, lng: 8.2439},
+  zoom: 8
+});
+    </script>
 {% endblock %}
