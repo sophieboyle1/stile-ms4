@@ -1,7 +1,8 @@
 from django.shortcuts import render
+from .models import Category, Post, Comment
 
 
-def blog(request):
-    """ A view to return the blog page """
+def post(request):
+    template = 'blog/blog.html'
 
-    return render(request, 'blog/blog.html')
+    return render(request, template)
