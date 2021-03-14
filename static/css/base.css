@@ -601,6 +601,18 @@ fieldset .form-control, #card-element {
     opacity: unset;
 }
 
+/*------ Contact page ------*/
+
+div#map {min-height: 360px;}
+
+.contact-text {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.store-heading {
+    text-transform: uppercase;
+}
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
