@@ -651,6 +651,15 @@ input[type=submit]:hover {
   background-color: var(--color-green);
 }
 
+/*------ Blog page ------*/
+.h2-style {
+    margin: 65px auto 20px auto;
+}
+
+.paragraph-margin {
+    font-size: 1.3rem;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
