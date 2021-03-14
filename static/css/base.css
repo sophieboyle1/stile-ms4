@@ -613,6 +613,44 @@ div#map {min-height: 360px;}
 .store-heading {
     text-transform: uppercase;
 }
+
+.contact-heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.center-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------ Form taken from W3schools https://www.w3schools.com/howto/howto_css_contact_form.asp ------*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: var(--color-brown);
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 9rem;
+}
+
+input[type=submit]:hover {
+  background-color: var(--color-green);
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
