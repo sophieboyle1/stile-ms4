@@ -4,12 +4,12 @@
             <div class="container">
                 <div class="row footer-row">
                     <div class="col-sm-12 col-md-6 col-lg-3 no-padding">
-                        <a href="" class="footer-link mb-7">Shop</a>
-                        <a href="" class="footer-link mb-7-mob">About <span class="footer-link-brand">US</span></a>
+                        <a href="{% url 'products' %}" class="footer-link mb-7">Shop</a>
+                        <a href="{% url 'about' %}" class="footer-link mb-7-mob">About <span class="footer-link-brand">US</span></a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 no-padding order-md-3 order-lg-2">
-                        <a href="" class="footer-link mb-7">Blog</a>
-                        <a href="" class="footer-link mb-15-mob">Contact</a>
+                        <a href="{% url 'post' %}" class="footer-link mb-7">Blog</a>
+                        <a href="{% url 'contact' %}" class="footer-link mb-15-mob">Contact</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 no-padding order-md-2 order-lg-3">
                         <p class="mb-7">© 2021 STILE</p>
