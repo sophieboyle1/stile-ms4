@@ -660,6 +660,21 @@ input[type=submit]:hover {
     font-size: 1.3rem;
 }
 
+.read-text {
+    font-size: 1rem;
+    border: 1px solid #000000;
+    padding: .6rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-green);
+}
+
+.read-text:hover {
+    color: var(--color-white);
+    background-color: var(--color-brown);
+
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
