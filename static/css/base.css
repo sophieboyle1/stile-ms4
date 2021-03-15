@@ -666,12 +666,17 @@ input[type=submit]:hover {
     padding: .6rem;
     text-transform: uppercase;
     color: var(--color-white);
-    background-color: var(--color-green);
+    background-color: var(--color-brown);
 }
 
 .read-text:hover {
     color: var(--color-white);
-    background-color: var(--color-brown);
+    background-color: var(--color-green);
+
+}
+
+.cat-title, .cat-title:hover {
+    color: var(--color-black);
 
 }
 

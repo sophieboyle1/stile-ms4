@@ -22,3 +22,14 @@ def detail_post(request, slug):
     }
 
     return render(request, template, context)
+
+
+def category(request, slug):
+    category = Category.objects.get(slug=slug)
+
+    template = 'blog/blog_category.html'
+    context = {
+        'category': category
+    }
+
+    return render(request, template, context)
