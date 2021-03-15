@@ -705,7 +705,7 @@ input[type=submit]:hover {
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 1px solid #E6EFD6;
+    border: 1px solid #ced4da;
     padding: .8rem;
 }
 
