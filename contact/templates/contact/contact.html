@@ -33,10 +33,11 @@
     </div>
     <div class="container">
         <h2 class="contact-heading mt-5">Get In Touch</h2>
-        <img src="/media/seperater.png" alt="no-image" class="center-2">
+        <img src="/media/seperater.png" alt="no-image" class="center-2 mb-3">
     </div>
     <!--- Form/taken from W3 schools https://www.w3schools.com/howto/howto_css_contact_form.asp --->
     <div class="container">
+        <div class="col-8 offset-2">
         <form action="action_page.php">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -46,16 +47,22 @@
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
             <input type="submit" value="Submit">
         </form>
+        </div>
     </div>
 </div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
-    <script>
-map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 53.4129, lng: 8.2439},
-  zoom: 8
-});
-    </script>
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+            center: {
+                lat: 46.619261,
+                lng: -33.134766
+            }
+        });
+    }
+</script>
 {% endblock %}
