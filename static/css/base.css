@@ -695,6 +695,24 @@ input[type=submit]:hover {
     border: 1px solid #E6EFD6;
 }
 
+/*------ Stripe ------*/
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #E6EFD6;
+    padding: .8rem;
+}
+
+fieldset .form-control, #card-element  {
+    width: 100%;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
