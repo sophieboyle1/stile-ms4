@@ -1,7 +1,9 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 
 {% block content %}
+<!--- Blog Details --->
 <div class="container-fluid">
     <div class="row mt-2 py-2">
         <div class="col-8 offset-2">
@@ -13,7 +15,8 @@
             <h3 class="text-rosa-dark">{{ post.title}}</h3>
         </div>
         <div class="col-8 offset-2 col-md-3 offset-md-0">
-            <small>{{ post.date_added | date:"d M - Y - h:i | "}}<a href="{% url 'category' post.category.slug %}" class="cat-title">{{ post.category.title }}</a></small>
+            <small>{{ post.date_added | date:"d M - Y - h:i | "}}<a href="{% url 'category' post.category.slug %}"
+                    class="cat-title">{{ post.category.title }}</a></small>
         </div>
     </div>
     <div class="row py-1">
@@ -24,6 +27,42 @@
     <div class="row mb-2 py-4">
         <div class="col-8 offset-2">
             {{ post.article }}
+        </div>
+    </div>
+    <!--- Comment Section--->
+    <div class="row pt-4 pb-2">
+        <div class="col-8 offset-2">
+            <h3 class="comment-heading">Comments</h3>
+            <img src="/media/seperater.png" alt="no-image" class="nav-center-3">
+        </div>
+    </div>
+    <div class="row pt-2">
+        <div class="col-8 offset-2">
+            {% for comment in post.comments.all %}
+            <article class="article-comment">
+                <strong>{{ comment.name }} | {{ comment.date_added | date:"d M - Y - h:i "}}</strong><br>
+                {{ comment.article}}
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="col-8 offset-2">
+            <hr class="line">
+        </div>
+    </div>
+    <div class="row pb-4">
+        <div class="col-8 offset-2">
+            <h4 class="add-comment">Add A Comment</h4>
+        </div>
+    </div>
+    <div class="row pb-4">
+        <div class="col-8 offset-2">
+            <form method="post" action=".">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <input type="submit" class="add-comment" value="Add comment">
+            </form>
         </div>
     </div>
 </div>

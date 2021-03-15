@@ -644,7 +644,6 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 9rem;
 }
 
 input[type=submit]:hover {
@@ -652,6 +651,7 @@ input[type=submit]:hover {
 }
 
 /*------ Blog page ------*/
+
 .h2-style {
     margin: 65px auto 20px auto;
 }
@@ -677,7 +677,22 @@ input[type=submit]:hover {
 
 .cat-title, .cat-title:hover {
     color: var(--color-black);
+}
 
+.add-comment {
+    padding: none !important;
+}
+
+.nav-center-3 {
+    width: 9rem;
+}
+
+.form-control {
+    border: 1px solid #ced4da !important;
+}
+
+.line {
+    border: 1px solid #E6EFD6;
 }
 
 /*------ Responsiveness ------*/
@@ -690,6 +705,7 @@ input[type=submit]:hover {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: .25rem;
+}
 }
 
 @media (max-width: 768px){
