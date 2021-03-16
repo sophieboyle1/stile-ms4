@@ -743,6 +743,11 @@ fieldset .form-control, #card-element  {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+.paid-order-details {
+    width: 70%;
+    margin: auto;
+}
 
 /*------ Responsiveness ------*/
 
