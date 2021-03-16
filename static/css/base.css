@@ -713,6 +713,17 @@ fieldset .form-control, #card-element  {
     width: 100%;
 }
 
+/*------ Checkout success ------*/
+
+.h2-order-confirmation {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.pl-57 {
+    padding-left: 63px;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
