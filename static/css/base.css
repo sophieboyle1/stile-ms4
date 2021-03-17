@@ -706,11 +706,14 @@ input[type=submit]:hover {
 #card-element {
     color: #000;
     border: 1px solid #ced4da;
-    padding: .8rem;
 }
 
 fieldset .form-control, #card-element  {
     width: 100%;
+}
+
+.mb {
+    padding:1rem;
 }
 
 /*------ Checkout success ------*/
@@ -722,6 +725,16 @@ fieldset .form-control, #card-element  {
 
 .pl-57 {
     padding-left: 63px;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
 }
 
 /*------ Loading overlay ------*/
