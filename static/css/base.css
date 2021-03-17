@@ -633,7 +633,8 @@ input[type=text], select, textarea {
   box-sizing: border-box; 
   margin-top: 6px; 
   margin-bottom: 16px; 
-  resize: vertical 
+  resize: vertical ;
+  border-radius: 0;
 }
 
 input[type=submit] {
@@ -689,6 +690,7 @@ input[type=submit]:hover {
 
 .form-control {
     border: 1px solid #ced4da !important;
+    border-radius: 0;
 }
 
 .line {
@@ -760,6 +762,26 @@ select option[value=""] {
 .paid-order-details {
     width: 70%;
     margin: auto;
+}
+
+ .profile-container, .general-container {
+    max-width: 650px;
+    margin-bottom: 65px;
+}
+
+/*------ Allauth templates ------*/
+
+.div-login-form {
+    margin-top: .7rem;
+}
+
+.form-check label, .form-check-p, .login-p, .signup-p {
+    font-size: 1rem;
+}
+
+.text-link {
+    color: var(--color-black);
+    text-decoration: underline;
 }
 
 /*------ Responsiveness ------*/
