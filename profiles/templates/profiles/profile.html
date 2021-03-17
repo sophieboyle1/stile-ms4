@@ -12,5 +12,40 @@
         </div>
     </div>
 </div>
+<!-- Breadcrumbs -->
+<div class="container">
+    <div class="row shop-top-row">
+        <div class="col-12">
+            <div class="breadcrumbs">
+                <p class="breadcrumbs-text">
+                    <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+                    |
+                    <span class="active-breadcrumb">My profile</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="container profile-container">
+    <div class="row">
+        <div class="col-12">
+            <p class="mb-0">
+                Welcome to your profile, {{ user.username }}!
+                <br>
+                Select an action you would like to do. Happy shopping!
+                <br>
+                Your STILE team
+            </p>
+            <div class="div-profile-action-ctas pt-md-5 pb-md-5 mb-3 pt-3 pb-3">
+                <a href="" class="cta cta-white">See order history</a>
+                <a href="" class="cta cta-white">Edit profile details</a>
+            </div>
+            <div class="div-profile-action-ctas mb-3">
+                <a href="{% url 'products' %}" class="cta cta-black d-inline-block m-auto">Shop now</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

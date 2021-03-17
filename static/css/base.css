@@ -122,6 +122,7 @@ main {
     background-color: var(--color-green);
     color: var(--color-white);
     text-decoration: none;
+    margin-left: 1rem;
 }
 
 .cta-black, .cta-white:hover {
@@ -767,7 +768,7 @@ select option[value=""] {
     margin: auto;
 }
 
- .profile-container, .general-container {
+.general-container {
     max-width: 650px;
     margin-bottom: 65px;
     margin-top: 50px;
@@ -794,6 +795,15 @@ select option[value=""] {
 .div-password-reset-form {
     text-align: center;
 }
+
+/*------ Profile page ------*/
+
+.profile-container {
+    max-width: 650px;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
 
 /*------ Responsiveness ------*/
 
