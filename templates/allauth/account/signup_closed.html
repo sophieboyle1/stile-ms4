@@ -2,10 +2,24 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Up Closed" %}{% endblock %}
+{% block title %}{% trans "Sign Up Closed" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Up Closed" %}</h1>
+{% block inner_content %}
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col">
+            <h2 class="logo-font text-center">{% trans "Sign Up Closed" %}</h2>
+            <img src="/media/flowers.png" alt="flowers" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
+        </div>
+    </div>
+</div>
 
-<p>{% trans "We are sorry, but the sign up is currently closed." %}</p>
+<div class="container general-container">
+    <div class="row">
+        <div class="col">
+            <p class="text-center">{% trans "We are sorry, but the sign up is currently closed." %}</p>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -767,6 +767,7 @@ select option[value=""] {
  .profile-container, .general-container {
     max-width: 650px;
     margin-bottom: 65px;
+    margin-top: 50px;
 }
 
 /*------ Allauth templates ------*/
@@ -782,6 +783,12 @@ select option[value=""] {
 .text-link {
     color: var(--color-black);
     text-decoration: underline;
+}
+
+.div-profile-form, .div-signup-form, 
+#add-product-form, .div-login-form, 
+.div-logout-form, .div-password-reset-form {
+    text-align: center;
 }
 
 /*------ Responsiveness ------*/

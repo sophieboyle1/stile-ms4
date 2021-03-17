@@ -2,11 +2,28 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
+{% block title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
-{% block content %}
-    <h1>{% trans "Verify Your E-mail Address" %}</h1>
+{% block inner_content %}
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col">
+            <h2 class="logo-font text-center">{% trans "Verify Your E-mail Address" %}</h2>
+            <img src="/media/flowers.png" alt="flowers" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
+        </div>
+    </div>
+</div>
 
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
-
+    <div class="container general-container">
+        <div class="row">
+            <div class="col">
+                <p>{% blocktrans %}We have sent an e-mail to you for verification. 
+                    Follow the link provided to finalize the signup process. Please contact us at 
+                    <a href="mailto:stile.homeware@gmail.com">stile.homeware@gmail.com</a>
+                    if you do not receive it within a few minutes.{% endblocktrans %}
+                </p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
