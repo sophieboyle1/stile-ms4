@@ -39,6 +39,10 @@ html {
     height: 100%;
 }
 
+main {
+    min-height: calc(100vh - 165px);
+}
+
 /*------ Nav Bar ------*/
 
 .nav-link {
@@ -261,7 +265,6 @@ footer {
     background-color: var(--color-green);
     color: var(--color-white);
     min-height: 130px;
-    margin-top: 3rem;
 }
 
 .footer-link {
