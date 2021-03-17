@@ -788,9 +788,10 @@ select option[value=""] {
     text-decoration: underline;
 }
 
-.div-profile-form, .div-signup-form, 
-#add-product-form, .div-login-form, 
-.div-logout-form, .div-password-reset-form {
+.div-profile-form, 
+#add-product-form, 
+.div-logout-form, 
+.div-password-reset-form {
     text-align: center;
 }
 
