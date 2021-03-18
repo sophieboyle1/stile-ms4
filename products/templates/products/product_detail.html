@@ -2,6 +2,25 @@
 {% load static %}
 
 {% block content %}
+<!-- Breadcrumbs-->
+<div class="container">
+    <div class="row shop-top-row">
+        <div class="col-12">
+            <div class="breadcrumbs">
+                <p class="breadcrumbs-text">
+                    <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+                    |
+                    <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
+                    |
+                    <a href="{% url 'products' %}?category={{ product.category }}"
+                        class="breadcrumb-link">{{ product.category.friendly_name }}</a>
+                    |
+                    <span class="active-breadcrumb">{{ product.name }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Product information -->
 <div class="container-fluid">
     <div class="row">
@@ -46,14 +65,15 @@
                             <div class="form-group mt-4">
                                 <div class="input-group input-group-product-quantity">
                                     <input class="form-control qty_input" type="number" name="quantity" value="1"
-                                        min="1" max="99" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        min="1" max="99" data-item_id="{{ product.id }}"
+                                        id="decrement-qty_{{ product.id }}">
                                 </div>
-                                    <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black rounded-0"
-                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                                
-                                            </button>
-                                        </div>
+                                <div class="input-group-append">
+                                    <button class="increment-qty btn btn-black rounded-0"
+                                        data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12">
@@ -81,21 +101,30 @@
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                             <p class="accordion-card-paragraph">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
                                 survived not only five centuries
                             </p>
                             <p class="accordion-card-paragraph">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
                                 survived not only five centuries
                             </p>
                             <p class="accordion-card-paragraph">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
                                 survived not only five centuries
                             </p>
                         </div>

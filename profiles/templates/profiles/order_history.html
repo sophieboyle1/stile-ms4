@@ -55,13 +55,13 @@
     <div class="container profile-container mt-4 mb-2 div-profile-order">
         <div class="row">
             <div class="col-12 col-md-5 profile-order-details">
-                <p class="mb-1">date: {{ order.date }}</p>
-                <p class="mb-3">order ID: {{ order.order_number|truncatechars:15 }}</p>
-                <p class="mb-1 text-uppercase green-text">Total: {{ order.grand_total }}€</p>
+                <p class="mb-1">Date: {{ order.date }}</p>
+                <p class="mb-3">Order ID: {{ order.order_number|truncatechars:15 }}</p>
+                <p class="mb-1 text-uppercase green-text">Total: ${{ order.grand_total }}</p>
 
             </div>
             <div class="col-12 col-md-7 profile-line-item-details">
-                <p class="mb-1">items:</p>
+                <p class="mb-1">Items:</p>
                 <div class="pl-3">
                     <ul class="list-unstyled">
                         {% for item in order.lineitems.all %}

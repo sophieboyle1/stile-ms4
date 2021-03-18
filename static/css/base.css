@@ -122,7 +122,6 @@ main {
     background-color: var(--color-green);
     color: var(--color-white);
     text-decoration: none;
-    margin-left: 1rem;
 }
 
 .cta-black, .cta-white:hover {
@@ -812,6 +811,15 @@ select option[value=""] {
     max-width: 650px;
     margin-bottom: 65px;
     text-align: center;
+}
+
+.div-profile-order {
+    border: var(--border-black);
+    padding: 30px 20px;
+}
+
+.profile-intro-p {
+    font-size: 1.1rem;
 }
 
 
