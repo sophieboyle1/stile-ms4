@@ -788,8 +788,7 @@ select option[value=""] {
     text-decoration: underline;
 }
 
-.div-profile-form, 
-#add-product-form, 
+.div-profile-form,  
 .div-logout-form, 
 .div-password-reset-form {
     text-align: center;
@@ -799,7 +798,6 @@ select option[value=""] {
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
-
 
 #id_default_country option:first-child {
     color: #aab7c4;
