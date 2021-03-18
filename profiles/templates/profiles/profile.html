@@ -49,3 +49,8 @@
 </div>
 
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/countryfield.js' %}"></script>
+{% endblock %}

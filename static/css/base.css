@@ -796,6 +796,16 @@ select option[value=""] {
     text-align: center;
 }
 
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
+
 /*------ Profile page ------*/
 
 .profile-container {
