@@ -2,5 +2,80 @@
 {% load static %}
 
 {% block content %}
+<!-- Order History title -->
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center mt-3 mb-3 pb-1">
+            <h2 class="logo-font">Order History</h2>
+            <img src="/media/flowers.png" alt="flowers" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row shop-top-row">
+        <div class="col-12">
+            <div class="breadcrumbs">
+                <p class="breadcrumbs-text">
+                    <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+                    |
+                    <a href="{% url 'profile' %}" class="breadcrumb-link">My profile</a>
+                    |
+                    <span class="active-breadcrumb">Order history</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container profile-container mb-1">
+    <div class="row">
+        <div class="col-12">
+            {% if orders %}
+            <p class="profile-intro-p">
+                Below are all your recent purchases through this account, {{ user.username }}.
+            </p>
+            {% else %}
+            <p class="profile-intro-p">
+                Looks like you haven't ordered anything yet, {{ user.username }}!
+                Check out our shop for amazing boutique pieces. You can also check out our blog, where we give great
+                inspiration for styling your home.
+            </p>
+            <div class="div-profile-order-history-ctas pt-md-4 pb-md-4 mb-3 pt-4 pb-4">
+                <a href="{% url 'products' %}" class="cta cta-black mr-2">Shop here</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    {% for order in orders %}
+    <div class="container profile-container mt-4 mb-2 div-profile-order">
+        <div class="row">
+            <div class="col-12 col-md-5 profile-order-details">
+                <p class="mb-1">date: {{ order.date }}</p>
+                <p class="mb-3">order ID: {{ order.order_number|truncatechars:15 }}</p>
+                <p class="mb-1 text-uppercase green-text">Total: {{ order.grand_total }}€</p>
+
+            </div>
+            <div class="col-12 col-md-7 profile-line-item-details">
+                <p class="mb-1">items:</p>
+                <div class="pl-3">
+                    <ul class="list-unstyled">
+                        {% for item in order.lineitems.all %}
+                        <li>
+                            <span class="text-uppercase">{{ item.quantity }}</span> x
+                            <span class="text-uppercase">{{ item.product.name }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
