@@ -641,8 +641,7 @@ input[type=text], select, textarea {
   width: 100%; 
   padding: 12px; 
   border: 1px solid #ccc;
-  box-sizing: border-box; 
-  margin-top: 6px; 
+  box-sizing: border-box;  
   margin-bottom: 16px; 
   resize: vertical ;
   border-radius: 0;
@@ -863,6 +862,15 @@ select option[value=""] {
     border-radius: 0;
 }
 
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
@@ -903,16 +911,28 @@ select option[value=""] {
     padding-bottom: .2rem;
 }
 
-
-@media (max-width: 768px){
-    .nav-center {
-    padding-top: 1rem;
+.nav-link-main {
+    padding-left: 1rem;
+}
+.nav-center {
+    margin-top: .7rem;
 }
 }
 
-@media (max-width: 991px){
-    .nav-center {
+
+@media (min-width: 768px){
+.nav-center {
     padding-top: 1rem;
+}
+.header-content {
+    margin-top: 40%;
+}
+.nav-link-main {
+    padding-left: 1rem;
+}
+.navbar-toggler {
+    border: 1px solid black;
+    margin-left: 1rem;
 }
 }
 
@@ -949,5 +969,24 @@ select option[value=""] {
         font-style: italic;
         font-weight: bold;
         line-height: 1.5rem;
+    }
+}
+
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 }

@@ -35,8 +35,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH3uUD2evc8YMoR3CLKa4uUnoxS-EU7pU&callback=initMap"></script>
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH3uUD2evc8YMoR3CLKa4uUnoxS-EU7pU&callback=initMap"></script>
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
@@ -68,7 +70,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
+            <div class="col-12 col-lg-4 col-sm-4 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h1 class="my-0" id="logo"> STILE</h1>
                 </a>
@@ -76,10 +78,10 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                            <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                My account
-                            </a>
+                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            My account
+                        </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
@@ -110,9 +112,10 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>-->
+                </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
@@ -142,8 +145,8 @@
     {% endblock %}
 
     <main>
-    {% block content %}
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
     </main>
 
     {% block postloadjs %}
