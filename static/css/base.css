@@ -895,11 +895,11 @@ select option[value=""] {
     font-size: 45px;
 }
 
-.home-decor {
+.home-decor, .about-heading {
     font-size: 2.3rem;
 }
 
-.new {
+.new  {
     font-size: 2.7rem;
 }
 
@@ -913,14 +913,38 @@ select option[value=""] {
 
 .nav-link-main {
     padding-left: 1rem;
+    font-size: 1.3rem;
 }
 .nav-center {
     margin-top: .7rem;
 }
+
+.head-flowers {
+    width: 6.5rem;
+    padding-top: 4.5rem;
+}
+
+.logo-font {
+    font-size: 2rem;
+    margin-top: .7rem;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 0rem;
+    margin-left: 2rem;
+}
+.fa-shopping-basket:before {
+    color: black;
+}
+
+.about-image {
+    width: 350px;
+    height: auto;
+}
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 767px){
 .nav-center {
     padding-top: 1rem;
 }
@@ -930,9 +954,19 @@ select option[value=""] {
 .nav-link-main {
     padding-left: 1rem;
 }
+.fa-shopping-basket:before {
+    color: black;
+}
+.footer-row {
+    padding-bottom: 1rem;
+}
 .navbar-toggler {
     border: 1px solid black;
     margin-left: 1rem;
+}
+.head-flowers {
+    width: 9rem;
+    padding-top: 4.3rem;
 }
 }
 
