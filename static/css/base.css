@@ -43,6 +43,10 @@ main {
     min-height: calc(100vh - 165px);
 }
 
+.row {
+    margin-right: 0;
+}
+
 /*------ Nav Bar ------*/
 
 .nav-link {
@@ -91,6 +95,7 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: .2rem;
 }
 
 #delivery-banner {
@@ -869,7 +874,35 @@ select option[value=""] {
     border: 1px solid transparent;
     border-radius: .25rem;
 }
+.homepage-cards, .homepage-cards-3 {
+    margin-left: 1rem;
 }
+
+#hp-header-h1 {
+    font-size: 50px;
+    margin-top: 9rem;
+}
+
+#hp-header, #hp-header-tagline {
+    font-size: 45px;
+}
+
+.home-decor {
+    font-size: 2.3rem;
+}
+
+.new {
+    font-size: 2.7rem;
+}
+
+.footer-row {
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    padding-bottom: .2rem;
+}
+
 
 @media (max-width: 768px){
     .nav-center {
