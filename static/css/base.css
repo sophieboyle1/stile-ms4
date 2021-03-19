@@ -968,6 +968,9 @@ select option[value=""] {
     width: 9rem;
     padding-top: 4.3rem;
 }
+.about-text {
+    font-size: 1.3rem;
+}
 }
 
 @media(max-width:767px) {
