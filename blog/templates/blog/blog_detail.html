@@ -18,6 +18,12 @@
             <small>{{ post.date_added | date:"d M - Y - h:i | "}}<a href="{% url 'category' post.category.slug %}"
                     class="cat-title">{{ post.category.title }}</a></small>
         </div>
+        {% if request.user.is_superuser %}
+        <small class="ml-3">
+            <a href="{% url 'edit_blog' post.slug %}">Edit</a> |
+            <a class="text-danger" href="{% url 'delete_blog' post.slug %}">Delete</a>
+        </small>
+        {% endif %}
     </div>
     <div class="row py-1">
         <div class=" col-sm-10 offset-sm-1 col-md-8 offset-md-2">

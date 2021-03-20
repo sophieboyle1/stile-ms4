@@ -72,7 +72,7 @@ def add_blog(request):
 
 
 def edit_blog(request, slug):
-    """ Edit a product in the store """
+    """ Edit a Blog Post """
     post = get_object_or_404(Post, slug=slug)
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES, instance=post)
@@ -93,3 +93,11 @@ def edit_blog(request, slug):
     }
 
     return render(request, template, context)
+
+
+def delete_blog(request, slug):
+    """ Delete a blog post from the blog """
+    blog = get_object_or_404(Post, slug=slug)
+    blog.delete()
+    messages.success(request, 'Blog post deleted!')
+    return redirect(reverse('detail_post'))
