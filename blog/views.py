@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import Category, Post
+from django.contrib import messages
+
 from .forms import CommentForm
+from .forms import PostForm
 
 
 def post(request):
@@ -42,6 +45,17 @@ def category(request, slug):
     template = 'blog/blog_category.html'
     context = {
         'category': category
+    }
+
+    return render(request, template, context)
+
+
+def add_blog(request):
+    """ Add a blog post to the blog """
+    form = PostForm()
+    template = 'blog/add_blog.html'
+    context = {
+        'form': form,
     }
 
     return render(request, template, context)
