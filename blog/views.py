@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Post
 from django.contrib import messages
 
@@ -52,7 +52,17 @@ def category(request, slug):
 
 def add_blog(request):
     """ Add a blog post to the blog """
-    form = PostForm()
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save()
+            messages.success(request, 'Successfully added a blog post!')
+            return redirect(reverse('detail_post', args=[post.slug]))
+        else:
+            messages.error(request, 'Failed to add the blog post. Please ensure the form is valid.')
+    else:
+        form = PostForm()
+
     template = 'blog/add_blog.html'
     context = {
         'form': form,
