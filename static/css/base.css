@@ -113,6 +113,10 @@ main {
     margin-right: auto;
 }
 
+.fa-shopping-basket:before {
+    font-size: 1.6rem;
+}
+
 /*------ Buttons ------*/
 
 .cta {
