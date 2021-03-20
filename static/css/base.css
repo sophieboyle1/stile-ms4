@@ -144,6 +144,11 @@ main {
 
 /*------ Homepage ------*/
 
+.border-search {
+    border: no border;
+    margin-left: 2rem;
+    width: 80%;
+}
 #homepage-header {
     background: url('/media/homepage/homepage.jpg') no-repeat center;
     height: 800px;
