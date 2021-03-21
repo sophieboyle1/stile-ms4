@@ -288,6 +288,7 @@ footer {
     text-transform: uppercase;
     display: block;
     color: var(--color-white);
+    padding: .2rem;
 }
 
 .footer-link:hover {
@@ -1012,9 +1013,9 @@ select option[value=""] {
 }
 
 
-@media (max-width: 767px){
+@media (min-width: 767px){
 .nav-center {
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 .header-content {
     margin-top: 40%;
