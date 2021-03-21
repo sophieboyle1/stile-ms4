@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Post
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .forms import CommentForm
 from .forms import PostForm
@@ -50,8 +51,13 @@ def category(request, slug):
     return render(request, template, context)
 
 
+@login_required
 def add_blog(request):
     """ Add a blog post to the blog """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our STILE team has access to this.')
+        return redirect(reverse('homepage'))
+
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
@@ -71,8 +77,13 @@ def add_blog(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_blog(request, slug):
     """ Edit a Blog Post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our STILE team has access to this.')
+        return redirect(reverse('homepage'))
+
     post = get_object_or_404(Post, slug=slug)
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES, instance=post)
@@ -95,8 +106,13 @@ def edit_blog(request, slug):
     return render(request, template, context)
 
 
+@login_required
 def delete_blog(request, slug):
     """ Delete a blog post from the blog """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our STILE team has access to this.')
+        return redirect(reverse('homepage'))
+
     blog = get_object_or_404(Post, slug=slug)
     blog.delete()
     messages.success(request, 'Blog post deleted!')
