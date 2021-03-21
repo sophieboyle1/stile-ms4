@@ -33,7 +33,7 @@
 
 <div class="container profile-container mb-1">
     <div class="row">
-        <div class="col-12">
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
             <p class="profile-intro-p">
                 Below are shipping details saved for this account, {{ user.username }}.
                 Update the form if needed so that we can help you with a smooth checkout process.
@@ -44,7 +44,7 @@
 
 <div class="container profile-container">
     <div class="row">
-        <div class="col-12">
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
             <div class="div-profile-form">
                 <form class="mt-3" action="{% url 'edit_profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
