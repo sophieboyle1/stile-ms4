@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-12">
             <div class="div-add-product-form">
-                <form class="mt-3" action="{% url 'edit_blog' blog.slug %}" method="POST" enctype="multipart/form-data"
+                <form class="mt-3" action="{% url 'edit_blog' post.slug %}" method="POST" enctype="multipart/form-data"
                     id="add-blog-form">
                     {% csrf_token %}
                     {% for field in form %}
