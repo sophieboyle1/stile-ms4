@@ -4,11 +4,7 @@
         <img src="/media/seperater.png" alt="no-image" class="nav-center-4">
     </div>
     <div class="text-center">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
+        <span class="rating-stars" data-value="{{ product.avg_rating }}"></span><span>({{ reviews.count }})</span>
     </div>
     <div class="text-center mt-3">
         <button type="button" class="btn btn-outline-secondary rounded-0" data-toggle="modal"
@@ -44,12 +40,12 @@
         <div class="col-12 col-md-5 row p-3 m-3 border">
             <div class="col-12 col-lg-4 text-center px-0">
                 <p class="mb-0 fw-bold text-uppercase">{{ review.title }}</p>
-                <p><small class="text-secondary">rating: </small>{{ review.rating }}</p>
+                <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
                 {% if user.is_authenticated and user.get_username == review.user.user.username %}
                 <div class="col m-auto text-center mb-2">
                     <!-- Edit button, triggers modal with reviews details to be edited -->
-                    <a href="" class="p-1 text-secondary button text-decoration-none" data-bs-toggle="modal"
-                        data-bs-target="#editModal">
+                    <a href="" class="p-1 text-secondary button text-decoration-none" data-toggle="modal"
+                        data-target="#editModal">
                         <i class="fas fa-pen"></i>
                     </a>
                     <!-- Modal containing specific review, allows user to edit it -->
@@ -80,21 +76,66 @@
                             </div>
                         </div>
                     </div>
-                    {% endif %}
-                    <div class="col-12 col-lg-8">
-                        <p>"{{ review.description }}"</p>
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-end fst-italic text-secondary">-{{ review.user }}</p>
-                                <p class="text-secondary text-end mb-0">
-                                    <small>{{ review.date_posted|date:"M d, Y" }}</small>
-                                </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="deleteReview" tabindex="-1" aria-labelledby="deleteUserReview"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content rounded-0">
+                                <div class="modal-header text-uppercase">
+                                    <h5 class="modal-title" id="deleteUserReview">Are you sure?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to delete?
+                                    This will delete your review forever!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button button-green"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <a href="{% url 'delete_review' review.pk %}" type="button"
+                                        class="button button-delete">Delete</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+                {% endif %}
+                <div class="col-12 col-lg-8">
+                    <p>"{{ review.description }}"</p>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-end fst-italic text-secondary">-{{ review.user }}</p>
+                            <p class="text-secondary text-end mb-0">
+                                <small>{{ review.date_posted|date:"M d, Y" }}</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            {% endfor %}
         </div>
-      </div>
-      </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        const starRating = document.querySelectorAll('.rating-stars')
+
+
+        starRating.forEach(rating => {
+            const ratingValue = parseInt(rating.getAttribute('data-value'))
+            const fullStar = ratingValue;
+            const emptyStar = 5 - fullStar;
+            let stars = '';
+
+            for (let i = 1; i < 6; i++) {
+                if (i <= fullStar) {
+                    stars += `<i class="fas fa-star"></i>`;
+                }
+                else {
+                    stars += `<i class="far fa-star"></i>`;
+                }
+            }    
+            rating.innerHTML = stars
+        })
+    </script>
