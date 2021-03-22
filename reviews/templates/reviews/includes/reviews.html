@@ -1,3 +1,5 @@
+{% block content %}
+{% load static %}
 <!-- Reviews container -->
 <div class="container text-center" id="reviews">
     <h2 class="font-heading d-inline-block p-1 mt-5 mb-3">Reviews</h2>
@@ -47,6 +49,7 @@
         <div class="col-12 col-md-5 row p-3 m-3 border">
             <!-- Title and rating -->
             <div class="col-12 col-lg-4 text-center px-0">
+                {{ review.id}}
                 <p class="mb-0 fw-bold text-uppercase">{{ review.title }}</p>
                 <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
                 <!-- For reviews written by the logged in user show edit and delete bittons -->
@@ -74,7 +77,7 @@
                                     <div class="modal-body">
                                         <!-- Render form using cripsy forms -->
                                         {% csrf_token %}
-                                        {{ edit_review_form|crispy }}
+                                        {{ review_form|crispy }}
                                     </div>
                                     <!-- Footer containing Add and Cancel buttons -->
                                     <div class="modal-footer">
@@ -136,25 +139,9 @@
         {% endfor %}
     </div>
 </div>
-
-<script type="text/javascript">
-    const starRating = document.querySelectorAll('.rating-stars')
+{% endblock %}
 
 
-    starRating.forEach(rating => {
-        const ratingValue = parseInt(rating.getAttribute('data-value'))
-        const fullStar = ratingValue;
-        const emptyStar = 5 - fullStar;
-        let stars = '';
-
-        for (let i = 1; i < 6; i++) {
-            if (i <= fullStar) {
-                stars += `<i class="fas fa-star"></i>`;
-            }
-            else {
-                stars += `<i class="far fa-star"></i>`;
-            }
-        }
-        rating.innerHTML = stars
-    })
-</script>
+{% block postloadjs %}
+<script type="text/javascript" src="{% static 'js/review.js' %}"></script>
+{% endblock %}
