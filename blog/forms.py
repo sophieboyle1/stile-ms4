@@ -24,4 +24,4 @@ class PostForm(forms.ModelForm):
         self.fields['title'].widget.attrs['autofocus'] = True
 
         for field in self.fields:
-            self.fields[field].widget.attrs['class'] = 'add-blog-form-field'
+            self.fields[field].widget.attrs['class'] = 'add-product-form-field'

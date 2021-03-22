@@ -896,6 +896,33 @@ select option[value=""] {
     background-color: var(--color-green);
     color: var(--white);
 }
+
+.btn-secondary {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 0;
+    border: solid 2px var(--color-light-green);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-light-green);
+    color: var(--black);
+    border: solid 2px var(--color-light-green);
+}
+
+.btn-primary {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-color: var(--color-green);
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-green);
+    color: var(--white);
+    border: solid 2px var(--color-green);
+}
+
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){

@@ -40,4 +40,4 @@ class ReviewForm(forms.ModelForm):
                 self.fields[field].label = False
 
             self.fields[field].widget.attrs['class'] = (
-                'mb-3 rounded-0 profile-form')
+                'add-blog-form-field')
