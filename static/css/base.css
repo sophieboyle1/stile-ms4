@@ -885,6 +885,17 @@ select option[value=""] {
     width: 1.5rem;
 }
 
+/*------ Reviews ------*/
+
+.btn-outline-secondary {
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--color-green);
+    color: var(--white);
+}
 /*------ Responsiveness ------*/
 
 @media (max-width: 375px){
