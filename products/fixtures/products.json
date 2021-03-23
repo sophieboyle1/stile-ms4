@@ -1,266 +1,574 @@
 [
-    {   "pk": 1,
+    {
+        "pk": 1,
         "model": "products.product",
-        "fields": {"sku": "pp5001340155",
-        "name": "Candle Holder",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "price": 7.99,
-        "category": 1,
-        "rating": 4.6,
-        "image_url": null,
-        "image": "candle-holder.jpg"}
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "Heraldic Wall Plaque",
+            "description": "Heraldic wall plaque owner Jamie Jaffe has long been inspired by the unique textures and colors of wood.In fact, he spent years working in his family's art gallery, learning the know-how of wood blowing. Shifting his focus to wall plaques, he began to create original designs for the home like this framed beauty. Dimensions: H:80 W:65cm",
+            "price": 130.00,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "1769444043.jpg"
+        }
     },
     {
-      "pk":2,
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600425",
+            "name": "Wall Decor",
+            "description": "Crafted from natural copper and brass, this piece adds a burst of textural charm to your mantel or wall decor. Sold as a pack of three. Hanging hardware required. Imported. Dimensions: 23 x 23w",
+            "price": 12.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "walldecor-1.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001730010",
+            "name": "Manoir Half Moon table",
+            "description":"Featuring a beautiful contrast of white and brown  hand-finished wood, this side table is a chic accent for any space. Slight variation in natural wood may occur. Sealed with clear lacquer for protection Wipe clean with soft cloth. Avoid chemical cleaners This piece is intended for indoor use. Imported.Dimensions: Overall: 20.75, 16 diameter Table Top Thickness: 0.5.",
+            "price": 69.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": null,
+            "image": "1918425772_JrxZ4DD.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600426",
+            "name": "Lupia Cushion",
+            "description": "Our beautiful cushion from the Lupia series is made from 100% cotton and comes with a decorative embroidered floral design. The design is inspired by the colorful Lupinus flower. Embroidered on an off white cotton background. Besides the decorative design with the Lupinus flowers, the cotton makes the cushion soft as silk.",
+            "price": 19.99,
+            "category": 2,
+            "rating": 4.3,
+            "image_url": null,
+            "image": "2112906712.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600427",
+            "name": "Mirror Darius",
+            "description": "A regal eye shape design created with antique-finished brass rods makes a statement in any space. The bottom can be removed to be hung, or you can place on any counter top. Hanging hardware included, Gold Metal, glass. Wipe with soft cloth. Dimensions : 30.5 diameter",
+            "price": 12.99,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "mirror-1.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600428",
+            "name": "Manoir Side Table",
+            "description": "With an elevated rustic wood inspired texture throughout, our Manoir collection is accented with elliptical brass and lucite knobs etched with the same fine detail as reflected in its veneer. A great companion to a lounge chair or bedside, this elegant side table features an open shelf and one drawer to accommodate a petite table lamp and a stack of books.",
+            "price": 64.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": null,
+            "image": "1934425309_zaRZ732.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600429",
+            "name": "Two Drawer Chest",
+            "description": "Carved by hand from tropical hardwood, this stunning dresser adds unparalleled charm to any space - and its generously sized drawers help you organize all of your essentials. Hand carved tropical hardwood two-drawer reinforced with engineered hardwood and a gray oil finish. Dimensions: Overall: 35H, 44W, 21D",
+            "price": 120.99,
+            "category": 4,
+            "rating": 5.00,
+            "image_url": null,
+            "image": "1769438783_X4YzPF4.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600430",
+            "name": "White-washed Console",
+            "description": "Offering a contemporary twist on a midcentury-inspired silhouette, this console features an external border element that frames its shape and tapers to the leg. There are two types of grain of the wood without clashing or distracting, while sculpted drawer fronts add a layer of texture that draws the eye.  Dimensions: Overall: 30H, 50W, 18D",
+            "price": 150.00,
+            "category": 4,
+            "rating": 4.4,
+            "image_url": null,
+            "image": "1693882399.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600431",
+            "name": "Country House Mirror",
+            "description": "Framed by classic shades of white and brown wood, this mirror lends a textured touch to any space. Handmade shades of wood. mirrored glass. Wipe clean with soft, dry cloth. Imported Dimensions : 30.5 diameter 3 projection",
+            "price": 58.99,
+            "category": 3,
+            "rating": 4.3,
+            "image_url": null,
+            "image": "mirror-2.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600432",
+            "name": "Distressed Mirror",
+            "description": "Intricate distressed shades of wood creates the subtle window effect of this beautiful, neutral-toned mirror - it's a piece that's sure to catch plenty of glances anywhere you place it. Wood, polished glass. Hanging hardware required. Wipe with a soft, dry cloth. Imported. Dimensions: 36 x 3 x 62 cm",
+            "price": 78.00,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "mirror-3.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600433",
+            "name": "Standford Mirror",
+            "description": "This elegant mirror is perfectly at home in a foyer, bedroom, or living room. Engineered hardwood, mirrored glass. Fitted with a ready-to-hang D-ring; hanging hardware required. Wipe clean with soft cloth. Imported Dimensions: 12H, 9.5W 0.5 projection.",
+            "price": 85,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "mirror-4.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600434",
+            "name": "Wooden Frame Mirror",
+            "description": "Fit with a beautiful beveled edge crafted out of grey-washed natural oak, this mirror brings a classic touch to any space - whether hung above a bathroom vanity or an entryway table. Bathroom-rated. Hand painted resin, mirrored glass. Fitted with ready-to-hang D-ring; hanging hardware not included. Wipe clean with soft cloth Dimensions: 34inch diameter 2, projection",
+            "price": 125.00,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "mirror-5.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600435",
+            "name": "Charm Mirror",
+            "description": "A beautiful contrast of whitewashed hardwood and classic design invites modern glamour into any room of your home. Handcrafted tropical hardwood, mirrored glass. Due to the handcrafted nature of this item, expect slight variation in the appearance. Fitted with a ready-to-hang D-ring; hanging hardware required. Wipe clean with soft cloth. Dimensions : 60 x 4 x 77",
+            "price": 144.99,
+            "category": 3,
+            "rating": 4.5,
+            "image_url": null,
+            "image": "mirror-6.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600436",
+            "name": "Large Moss Cushion",
+            "description": "Stripes of texture make this so-soft cotton jersey pillow a statement-making accent to any seat. Concealed zip.Cotton jersey; poly fill. Embroidered and textured embellishments. Machine wash. Imported.",
+            "price": 14.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "cushion-2.png"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600437",
+            "name": "Marquise Cushion",
+            "description": "Portraying a classic style, this pillow brings luxury to your home with its classic colour and artful textural renderings.Concealed zip. Polyester, cotton, linen; poly fill. Spot clean. Imported.",
+            "price": 21.00,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "cushion-3.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600438",
+            "name": "Florie Cushion",
+            "description": "Invite springtime into your decor year-round with this pillow that features an embroidered floral motif and charming motto.Concealed zip. Cotton; poly fill. Spot clean. Imported.",
+            "price": 23.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "cushion-4.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600439",
+            "name": "Histoire Cushion",
+            "description": "Maggie Stephenson is a Florida-based artist and illustrator whose designs are inspired by her European upbringing, as well as a lifelong affinity for travel. Informed by an interest in color nature, and shape, Stephenson's work features whimsical interplay between a variety of textures and forms. Digitally printed cotton slub; poly fill.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": null,
+            "image": "cushion-5.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600440",
+            "name": "Bine Cushion",
+            "description": "Layer up a daybed or chaise with this stitched pillow - it's a cozy, statement-making addition to any seat in your home.Concealed zip.Cotton, olefin; poly fill. Embroidered embellishments. Machine wash. Imported.",
+            "price": 19.99,
+            "category": 2,
+            "rating": 4.5,
+            "image_url": null,
+            "image": "cushion-6.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600441",
+            "name": "Faux Eucalyptus Wreath",
+            "description": "Create an inviting entryway with this beautiful wreath featuring eucalyptus greens made from handcrafted mulberry paper.Handcrafted mulberry paper. Imported. Dimensions: 14 diameter",
+            "price": 30.00,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": null,
+            "image": "walldecor-2.jpg"
+        }
+    },
+    {   "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "PP5001730010",
+            "name": "Florie Pillar Candle",
+            "description": "Decorative paraffin pillar candle in the colour air blue. This beautiful candle is produced with 100% paraffin wax, which is a mineral material . The candle measures H20xØ7.5 cm and has a buning time of 60 hours. We make soot tests on our candles to ensure that the wax does not exceed EU requirements regarding strict limits for sooting.",
+            "price": 16.00,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "candle.jpg"}
+    },
+    {
+      "pk": 21,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600425",
-         "name":"Wall Decor",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price": 12.99,
-         "category": 1,
+         "sku":"PP5005870638",
+         "name":"White Terracotta Vase",
+         "description":"Elevate a bouquet of her favorite flowers with this artfully handpainted vase that she'll cherish for years to come. Handpainted stoneware, Due to the handcrafted nature of this item, expect slight variation in the appearance of each unique piece. Wipe clean with soft cloth. Imported. Dimensions: D38 x h40cm",
+         "price":120.00,
+         "category":1,
          "rating":4.6,
          "image_url": null,
-         "image":"walldecor-1.jpg"
+         "image":"vase.jpg"
       }
    },
    {
-      "pk":3,
+      "pk": 23,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001730010",
-         "name":"Rug kystmaure",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price": 45.00,
-         "category":4,
-         "rating":4.8,
+         "sku":"PP5002820069",
+         "name":"Large Spider Alium Plant",
+         "description":"This beautiful plant can be placed anywhere in the home (needs sufficient light). During initial growth, water occasionally; once fully developed normally within one year, water moderately. In the spring and summer months, keep the soil moist to encourage growth. Remove any leaves that have brown tips as well as any that may be yellowing.",
+         "price":24.99,
+         "category":1,
+         "rating":4.7,
          "image_url":null,
-         "image":"rug-2.jpg"
+         "image":"plant.jpg"
       }
    },
    {
-      "pk":4,
+      "pk": 24,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600426",
-         "name":"Stripe Cushion",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":14.99,
-         "category":2,
-         "rating":4,
+         "sku":"PP5003270936",
+         "name":"Set of 2: White Grass Baskets",
+         "description":"Perfect for storing blankets and linens, this set of jute-crafted baskets feature globally inspired designs and leather-wrapped handles. Set of two. Jute, cotton, leather, Spot clean. Imported. Dimensions : Small: 8.5H, 7.75 diameter Large: 10.5H, 9.25 diameter",
+         "price":45.00,
+         "category":1,
+         "rating":1,
          "image_url": null,
-         "image":"cushion-1.jpg"
+         "image":"baskets.jpg"
       }
    },
    {
-      "pk":5,
+      "pk": 25,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600427",
-         "name":"Mirror Darius",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":12.99,
-         "category":3,
+         "sku":"PP5005280104",
+         "name":"Bicycle Bookends",
+         "description":"Handmade bookends to store your books neatly. These bookends add charm to curios and bookshelves alike. Exclusively for STILE. Set of two. Aluminium. Wipe clean with soft cloth. Imported. Dimensions: 15 x 8 x 18cm",
+         "price":44.99,
+         "category":1,
          "rating":4.6,
          "image_url": null,
-         "image":"mirror-1.jpg"
+         "image":"book-end.jpg"
       }
    },
    {
-      "pk":6,
+      "pk": 26,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600428",
-         "name":"Rug Solros",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":10.99,
-         "category":4,
-         "rating":4.8,
+         "sku":"PP5005850180",
+         "name":"Willow Wine Bottle Hamper",
+         "description":"Whether enjoying a glass of white al fresco or a bottle of red with a loved one, this holder lends a natural touch to your table. Can be used for party's or picnics or any group setting. Stained willow and wood. Slight variation in natural texture will occur. Holds four bottles. Should not be used near sources of ignition.Dimensions : 25 x 25 x 20-36",
+         "price":39.99,
+         "category":1,
+         "rating":4.6,
          "image_url": null,
-         "image":"rug-1.jpg"
+         "image":"hamper.jpg"
       }
    },
    {
-      "pk":7,
+      "pk": 27,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600429",
-         "name":"Rag Rug Rose",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":17.99,
-         "category":4,
+         "sku":"PP5006820399",
+         "name":"Difmouria Framed Prints",
+         "description":"A well-designed gallery wall is a masterpiece in itself. Artfully Walls is an art and curating service that carefully selects work from artists around the world and then matches the pieces to the size, color scheme or inspiration of a space.All created with museum-quality paper and ink. Set of three.",
+         "price":150.00,
+         "category":1,
          "rating":5.00,
          "image_url": null,
-         "image":"rug-3.jpg"
+         "image":"1476086691.jpg"
       }
    },
    {
-      "pk":8,
+      "pk": 28,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600430",
-         "name":"Rug Pappalina",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":5.00,
-         "category":4,
-         "rating":4,
+         "sku":"PP5006243276",
+         "name":"Savannah Blue Cushion",
+         "description":"Textured felt receives a sophisticated update with this plush, feather-filled pillow rendered in this season's most sought-after hues. Bottom zip. Polyester; feather fill. Spot clean. Imported. Size 40x40cm.",
+         "price":29.99,
+         "category":2,
+         "rating":4.4,
          "image_url": null,
-         "image":"rug-4.jpg"
+         "image":"spot-cushion.jpg"
       }
    },
    {
-      "pk":9,
+      "pk": 29,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600431",
-         "name":"Country House Mirror",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":58.99,
-         "category":3,
+         "sku":"PP5006640930",
+         "name":"Cotton Clouds Decorative Pillow",
+         "description":"This decorative pillow will add a finishing touch to your bedroom, couch or entryway bench. coral decorative pillow 18x18 100 percent cotton; polyester fill spot clean imported",
+         "price":26.99,
+         "category":2,
          "rating":4.3,
          "image_url": null,
-         "image":"mirror-2.jpg"
+         "image":"pink-pillow.jpg"
       }
    },
    {
-      "pk":10,
+      "pk": 30,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600432",
-         "name":"Distressed Mirror",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":78.00,
-         "category":3,
-         "rating":4.6,
-         "image_url": null,
-         "image":"mirror-3.jpg"
-      }
-   },
-   {
-      "pk":11,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600433",
-         "name":"Standford Mirror",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":85,
-         "category":3,
-         "rating":4.6,
-         "image_url": null,
-         "image":"mirror-4.jpg"
-      }
-   },
-   {
-      "pk":12,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600434",
-         "name":"Wooden Frame Mirror",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":125.00,
-         "category":3,
-         "rating":4.6,
-         "image_url": null,
-         "image":"mirror-5.jpg"
-      }
-   },
-   {
-      "pk":13,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600435",
-         "name":"Charm Mirror",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":144.99,
-         "category":3,
-         "rating":4.5,
-         "image_url": null,
-         "image":"mirror-6.jpg"
-      }
-   },
-   {
-      "pk":14,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600436",
-         "name":"Large Moss Cushion",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":25.99,
+         "sku":"PP5006590221",
+         "name":"Jacobean Stripe Decorative Pillow",
+         "description":"Our Jacobean Stripe oblong pillow adds classic style and elegance to your room. soothing shades of green, blue, coral and ivory pieced fabric with rice-stitched detail a perfect complement to the Jacobean Stripe quilt, sold separately measures 18x12 Cotton with polyester fill. Spot clean. Imported.",
+         "price":17.99,
          "category":2,
          "rating":4.6,
          "image_url": null,
-         "image":"cushion-2.png"
+         "image":"decor-pillow.jpg"
       }
    },
    {
-      "pk":15,
+      "pk": 31,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600437",
-         "name":"Marquise Cushion",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":21.00,
+         "sku":"PP5006590213",
+         "name":"Royal Velvet Down Chamber Pillow",
+         "description":"The Down Chamber pillow, with its unique pillow-in-pillow design, offers all-natural comfort. With an inner core of springy, high-loft feathers wrapped in an outer layer of silk, luxurious down, you'll receive supportive, lofty comfort. The gusset allows for additional neck support so you can sleep comfortably. inner chamber of springy.",
+         "price":34.99,
          "category":2,
          "rating":4.6,
          "image_url": null,
-         "image":"cushion-3.jpg"
+         "image":"white-pillow.jpg"
       }
    },
    {
-      "pk":16,
+      "pk": 32,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600438",
-         "name":"Florie Cushion",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":23.99,
-         "category":2,
-         "rating":4.6,
-         "image_url": null,
-         "image":"cushion-4.jpg"
-      }
-   },
-   {
-      "pk":17,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600439",
-         "name":"Histoire Cushion",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":25.99,
-         "category":2,
-         "rating":4.8,
-         "image_url": null,
-         "image":"cushion-5.jpg"
-      }
-   },
-   {
-      "pk":18,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600440",
-         "name":"Bine Cushion",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "sku":"PP5006420400",
+         "name":"Flower Seat Cushion",
+         "description":"Designed by Kendra Dandy in collaboration with STILE, this playfully printed cushion brings a pop of color and cheer to indoor or outdoor seating. This piece is suitable for indoor or outdoor use Polyester; high-density, quick-dry foam fill Tie closure. Cover or store indoors during inclement weather or when not in use. Dimensions: 1.5H, 16.5W, 17.75D",
          "price":19.99,
          "category":2,
-         "rating":4.5,
+         "rating":4.6,
          "image_url": null,
-         "image":"cushion-6.jpg"
+         "image":"flower-cushion.jpg"
       }
    },
    {
-      "pk":19,
+      "pk": 33,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600441",
-         "name":"Faux Eucalyptus Wreath",
-         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-         "price":30.00,
-         "category":1,
+         "sku":"PP5005870271",
+         "name":"Flower Cushion",
+         "description":"Make any seat that much more comfortable - and chic - with this colorful, flower design cushion. This piece is suitable for indoor or outdoor use. Polyester; high-density, quick-dry foam fill. To maintain cushions, use a soft brush to loosen and remove surface dirt; vacuum regularly Cover or store indoors during inclement weather or when not in use. Dimensions: 45x45cm",
+         "price":19.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"2114060141.jpg"
+      }
+   },
+   {
+      "pk": 34,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005870183",
+         "name":"Round Wooden Mirror",
+         "description":"Crafted from Fir veneer, this beveled mirror is perfectly at home in a living room, entryway, or bedroom. Fir wood, engineered hardwood, mirrored glass, Hanging hardware required, Wipe clean with soft cloth, Imported. Dimensions: 78.25H, 38W 2 projection",
+         "price":220.00,
+         "category":3,
+         "rating":4.6,
+         "image_url": null,
+         "image":"wooden_mirror.jpg"
+      }
+   },
+   {
+      "pk": 35,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP50065901117",
+         "name":"Large black & Gold Mirror",
+         "description":"A regal sunburst design created with antique-finished gold details, makes a statement in any space. Hanging hardware included, Metal, wood, Wipe with soft cloth, Imported. Dimensions: 30.5 diameter",
+         "price":180.00,
+         "category":3,
+         "rating":4.8,
+         "image_url": null,
+         "image":"black-mirror.jpg"
+      }
+   },
+   {
+      "pk": 36,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5006170131",
+         "name":"Handcarved Lombok Mirror",
+         "description":"Handcarved from tropical hardwood, this elegant mirror is a work of art, where intricate relief work brings a bohemian touch to any bathroom. Bathroom-rated. Hand carved tropical hardwood, mirrored glass. Due to the handcrafted nature of this item, expect slight variation in the appearance of each unique piece. Dimensions : 30H, 22W 1.25 projection",
+         "price":160.00,
+         "category":3,
+         "rating":4.4,
+         "image_url": null,
+         "image":"1934480674.jpg"
+      }
+   },
+   {
+      "pk": 37,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5006170128",
+         "name":"Beau Table",
+         "description":"Crafted with tapered legs, curved corners, and subtle hints of distressed wood, this midcentury-inspired table lends a touch of casual charm to any living space. Wood & MDF Dimensions: L46 x H85 x W30cm",
+         "price":89.99,
+         "category":4,
+         "rating":4.5,
+         "image_url": null,
+         "image":"1750661638.jpg"
+      }
+   },
+   {
+      "pk": 38,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005980146",
+         "name":"Manoir Wall Table",
+         "description":"Minimalist in its design yet rich in the details of its natural grain, this console is crafted from solid white wood with a rustic, blackened finish that lends to eclectic, artisanal interiors. Dimensions: Overall: 30H, 54W, 16D, Table Top Thickness: 4 , Distance Between Legs: 8 short side; 46long side.",
+         "price":75.00,
+         "category":4,
+         "rating":4.8,
+         "image_url": null,
+         "image":"1783126355.png"
+      }
+   },
+   {
+      "pk": 39,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005851218",
+         "name":"Cream Ribbed Chair",
+         "description":"Featuring plush velvet upholstery, polished wood legs and a plump silhouette worth sinking into, this design recalls a vintage Italian classic, crafted to accommodate guests over lingering dinners. This slimmed-down version features an armless profile and a back brass handle. Dimensions: 58 x 57 x h65cm.",
+         "price":65.00,
+         "category":4,
          "rating":4.3,
          "image_url": null,
-         "image":"walldecor-2.jpg"
+         "image":"2022202766.jpg"
+      }
+    },
+    {
+      "pk":40,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005520205",
+         "name":"Grey Linen Arm Chair",
+         "description":"A low-profile silhouette with tufting and nailhead trim fits right into both formal living rooms and cozy reading nooks. Maple legs. Legs are not removable This piece is intended for indoor use. No assembly required. Dimensions: H:106 W:75 D:84cm",
+         "price":160.00,
+         "category":4,
+         "rating":4.6,
+         "image_url": null,
+         "image":"1898535518.jpg"
+      }
+   },
+   {
+      "pk":41,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005520201",
+         "name":"Louise Stool",
+         "description":"Perched atop the thin wood frame of this contemporary piece, lush, delicate foliage spirals and curves along the streamlined silhouette of this petite stool. Handcrafted stool with natural bone inlay, wood legs, and a linen-upholstered cushion. Lightly weathered wood. Dimensions: ⌀ 45 x 45 cm",
+         "price":49.99,
+         "category":4,
+         "rating":4.9,
+         "image_url": null,
+         "image":"2025911755.jpg"
+      }
+   },
+   {
+      "pk":42,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005310360",
+         "name":"Manoir Console Pomponne",
+         "description":"Rays of tropical oak burst from a central demi-lune hardware accent —featuring a resin sun motif set in brass — creating a striking storage piece that suits almost any space. Two adjustable shelves Our beautiful oak ''Pomponne'' console with 2 drawers and display shelf measures L160 x H85 x D55cm.",
+         "price":89.99,
+         "category":4,
+         "rating":4.3,
+         "image_url": null,
+         "image":"1734462704.jpg"
       }
    }
-] 
-
+]
