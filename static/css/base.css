@@ -229,36 +229,53 @@ main {
 
 /*------ Homepage/section2 ------*/
 
-.hp-section-2 {
-    background: url('/media/homepage/section-2.png') no-repeat center;
+.hand-picked {
+    padding-top: 3rem;
+    padding-left: 1.5rem;
 }
 
- .div-section-text-right {
-    margin-top: 3rem;
-    margin-bottom: 2.7rem;
-} 
-
-.div-section-img-left img {
-    width: 100%;
+.section-2-p {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
 }
 
-.container-trends {
+.section-cta {
+    padding-left: 1.5rem;
+}
+
+.col-xs-12 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  min-height: 200px;
+}
+.half-right {
     background-color: var(--color-light-green);
+} 
+.half-left  img,
+.half-right img {
+  height: auto;
+  width: 100%;
 }
-
-.section-p {
-    font-size: 1.3rem;
-    margin-top: 3rem;
-    margin-bottom: 2.73rem;
+@media (min-width: 481px) {
+  .half-left,
+  .half-right {
+    overflow: hidden;
+    padding: 0;
+    position: responsive;
+  }
+  .half-left  > .container,
+  .half-right > .container {
+    position: absolute;
+    top: 0;
+  }
+  .half-left  > .container { right: 0;}
+  .half-right > .container { left: 0; }
 }
 
 h2 {
     font-size: 2.5rem;
-}
-
-.container-trends {
-    margin-top: 3rem;
-    margin-bottom: 4.5rem;
 }
 
 /*------ Homepage/section-3 ------*/
@@ -946,6 +963,14 @@ select option[value=""] {
     border-radius: .25rem;
 }
 
+.col-sm-6 {
+    padding: 0;
+}
+
+.hand-picked {
+    padding-top: .4rem;
+}
+
 #hp-header-h1 {
     font-size: 50px;
     margin-top: 9rem;
@@ -1091,10 +1116,22 @@ select option[value=""] {
 }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .fa-arrow-right:before, .fa-arrow-left:before {
         padding: 0.8rem;
     }
+    .hand-picked {
+    padding: 0;
+    font-size: 1.5rem;
+    }
+    .section-2-p {
+    font-size: .9rem;
+    padding: 0;
+    }
+    .section-cta {
+        padding: 5px 0px 30px;
+    }
+
 }
 
 @media(max-width:767px) {
