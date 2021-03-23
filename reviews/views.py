@@ -44,7 +44,6 @@ def add_review(request, product_id):
 
 
 def edit_review(request, review_id):
-    # pass
     """
     Saves review form edited by user
     """

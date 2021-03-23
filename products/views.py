@@ -62,6 +62,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
@@ -81,7 +82,7 @@ def product_detail(request, product_id):
         edit_review_form = None
 
     review_form = ReviewForm()
-
+    template = 'products/product_detail.html'
     context = {
         'product': product,
         'reviews': reviews,
@@ -89,7 +90,7 @@ def product_detail(request, product_id):
         # 'edit_review_form': edit_review_form,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
