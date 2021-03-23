@@ -57,7 +57,7 @@
             <div class="col-12 col-md-5 profile-order-details">
                 <p class="mb-1">Date: {{ order.date }}</p>
                 <p class="mb-3">Order ID: {{ order.order_number|truncatechars:15 }}</p>
-                <p class="mb-1 text-uppercase green-text">Total: ${{ order.grand_total }}</p>
+                <p class="mb-1 text-uppercase green-text">Total: €{{ order.grand_total }}</p>
 
             </div>
             <div class="col-12 col-md-7 profile-line-item-details">
