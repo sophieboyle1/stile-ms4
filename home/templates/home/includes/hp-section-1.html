@@ -1,10 +1,12 @@
 {% block content %}
+<!--- Header Text --->
 <div class="container-fluid div-section">
     <div class="container hp-section-1-heading">
         <h2 class="home-decor">Home Decor</h2>
         <h3 class="new">New Arrivals</h3>
         <img src="media/seperater.png" alt="no-image" class="center">
     </div>
+    <!--- New Products --->
     <div class="row hp-section-1 mt-4">
         <div class="container">
             <div class="row product-card-row mb-5">
@@ -12,6 +14,7 @@
                     <div class="div-product-card">
                         <div class="div-product-card-img">
                             <div class="product-card-content">
+                                <!--- feature product one --->
                                 <a href="{% url 'product_detail' featured_product_1.id %}" class="product-page-link">
                                     <div class="div-product-card-img">
                                         {% if featured_product_1.image %}
@@ -31,6 +34,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="div-product-card">
                         <div class="div-product-card-img">
+                            <!--- feature product two --->
                             <div class="product-card-content">
                                 <a href="{% url 'product_detail' featured_product_2.id %}" class="product-page-link">
                                     <div class="div-product-card-img">
@@ -51,6 +55,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="div-product-card">
                         <div class="div-product-card-img">
+                            <!--- feature product three --->
                             <div class="product-card-content">
                                 <a href="{% url 'product_detail' featured_product_3.id %}" class="product-page-link">
                                     <div class="div-product-card-img">

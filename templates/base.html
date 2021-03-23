@@ -51,6 +51,7 @@
 </head>
 
 <body>
+    <!--- Header and Navigation--->
     <header class="container-fluid">
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
@@ -124,7 +125,7 @@
         </div>
     </header>
 
-
+    <!--- Toasts--->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
@@ -146,11 +147,13 @@
     {% block head_content %}
     {% endblock %}
 
+    <!--- Page Content --->
     <main>
         {% block content %}
         {% endblock %}
     </main>
 
+    <!--- JS Toasts --->
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
@@ -158,7 +161,7 @@
     </script>
     {% endblock %}
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     {% include 'includes/footer.html' %}
 
 
