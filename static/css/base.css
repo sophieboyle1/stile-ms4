@@ -218,11 +218,13 @@ main {
 .product-card-title {
     font-size: 1.2rem;
     text-align: center;
+    color: var(--color-black);
 }
 
-.product-card-price{
+.product-price {
     text-align: center;
     line-height: .1rem;
+    color: var(--color-black);
 }
 
 /*------ Homepage/section2 ------*/

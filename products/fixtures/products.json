@@ -351,7 +351,7 @@
       "pk": 27,
       "model":"products.product",
       "fields":{
-         "sku":"PP5006820399",
+         "sku":"PP5006820388",
          "name":"Difmouria Framed Prints",
          "description":"A well-designed gallery wall is a masterpiece in itself. Artfully Walls is an art and curating service that carefully selects work from artists around the world and then matches the pieces to the size, color scheme or inspiration of a space.All created with museum-quality paper and ink. Set of three.",
          "price":150.00,
@@ -561,7 +561,7 @@
       "pk":42,
       "model":"products.product",
       "fields":{
-         "sku":"PP5005310360",
+         "sku":"PP5005310332",
          "name":"Manoir Console Pomponne",
          "description":"Rays of tropical oak burst from a central demi-lune hardware accent —featuring a resin sun motif set in brass — creating a striking storage piece that suits almost any space. Two adjustable shelves Our beautiful oak ''Pomponne'' console with 2 drawers and display shelf measures L160 x H85 x D55cm.",
          "price":89.99,
@@ -569,6 +569,47 @@
          "rating":4.3,
          "image_url": null,
          "image":"1734462704.jpg"
+      }
+   },
+   {
+      "pk":43,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005520349",
+         "name":"Table Decor",
+         "description":"Featuring an organic modern shape, this handcrafted vase is a worthy vessel for fresh bouquets and vibrant botanicals.Handcrafted glass Due to the handcrafted nature of this item, expect slight variation in the appearance of each unique piece. Wipe clean with soft cloth.",
+         "price":12.00,
+         "category":1,
+         "rating":4.5,
+         "image_url": null,
+         "image":"section-1.jpg"
+      }
+   },{
+      "pk":44,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005540401",
+         "name":"Candle Holder",
+         "description":"In the shape of a ceramic footed bowl, this candle holder is a versatile addition to any interior. Place a taper candle in it for a captivating dining table centerpiece, or allow it to function as a modern decorative accent when not in use.",
+         "price":8.00,
+         "category":1,
+         "rating":4.4,
+         "image_url": null,
+         "image":"section-11.jpg"
+      }
+   },
+   {
+      "pk":45,
+      "model":"products.product",
+      "fields":{
+         "sku":"PP5005520489",
+         "name":"Bronze Vase",
+         "description":"This delicate vase lends sweetly feminine detail to any dried or faux floral arrangement.Capiz shell, windowpane oyster shell. Due to the handcrafted nature of this item, expect slight variation in the appearance of each unique piece",
+         "price":9.99,
+         "category":1,
+         "rating":4.3,
+         "image_url": null,
+         "image":"section-111.jpg"
       }
    }
 ]
