@@ -1,9 +1,11 @@
-STILE - E-Commerce Web App With Boutique Homeware pieces.
+# STILE - E-Commerce Web App With Boutique Homeware pieces.
 
-Code Institute - Final Milestone Project (4) - Full Stack Frameworks With Django.
+## Code Institute - Final Milestone Project (4) - Full Stack Frameworks With Django.
+
 
 STILE is a homeware boutique with hand picked items for you! Our collection ranges from furniture to home decor. The application focuses
 on Interior Design, and also a blog page with DIY items you can do from your own home, and also comment and leave some tips for others.
+
 
 ![homepage](readme/images/hero-image.png)
 

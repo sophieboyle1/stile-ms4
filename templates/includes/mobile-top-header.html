@@ -1,3 +1,4 @@
+<!--- search bar --->
 <li class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
@@ -22,6 +23,7 @@
         </form>
     </div>
 </li>
+<!--- user account --->
 <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
@@ -44,12 +46,12 @@
         {% endif %}
     </div>
 </li>
+<!--- shopping cart --->
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
-        <div class="text-center">
-            <div><i class="fas fa-shopping-basket fa-lg"></i></div>
-            <p class="my-0">
-            </p>
-        </div>
+    <a href="{% url 'view_bag' %}" class="shopping-cart-icon nav-link d-block d-lg-none">
+        <i class="fas fa-shopping-basket"></i>
+        {% if bag_items %}
+        <span class="badge rounded-pill">{{ product_count }}</span>
+        {% endif %}
     </a>
 </li>
