@@ -701,10 +701,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-    background-color: var(--color-green);
-}
-
 input[type=submit] {
   background-color: var(--color-brown);
   color: white;
