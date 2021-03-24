@@ -666,7 +666,7 @@ div#map {min-height: 360px;}
 }
 
 /*------ Form taken from W3schools https://www.w3schools.com/howto/howto_css_contact_form.asp ------*/
-input[type=text], select, textarea {
+input[type=text],input[type=email], select, textarea {
   width: 100%; 
   padding: 12px; 
   border: 1px solid #ccc;
@@ -676,7 +676,7 @@ input[type=text], select, textarea {
   border-radius: 0;
 }
 
-input[type=submit] {
+button {
   background-color: var(--color-brown);
   color: white;
   text-transform: uppercase;
