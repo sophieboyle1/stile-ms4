@@ -1,0 +1,1 @@
+web: gunicorn stile.wsgi:application
