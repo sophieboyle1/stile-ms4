@@ -1,45 +1,44 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+STILE - E-Commerce Web App With Boutique Homeware pieces.
 
-Welcome sophieboyle1,
+Code Institute - Final Milestone Project (4) - Full Stack Frameworks With Django.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+STILE is a homeware boutique with hand picked items for you! Our collection ranges from furniture to home decor. The application focuses
+on Interior Design, and also a blog page with DIY items you can do from your own home, and also comment and leave some tips for others.
 
-## Gitpod Reminders
+![homepage](readme/images/hero-image.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The live website can be found [here]()
 
-`python3 -m http.server`
+## Table of Contents
 
-A blue button should appear to click: *Make Public*,
+* [Project Summary](#project-summary)
+* [User Experience Design (UX)](#user-experience-design)
+  * [The Strategy Plane](#the-strategy-plane)
+    * [User stories](#user-stories) 
+  * [The Scope Plane](#the-scope-plane)
+  * [The Structure Plane](#the-structure-plane)
+  * [The Skeleton Plane](#the-skeleton-plane)
+    * [Wireframes](#wireframes)
+    * [Database Design](#database-design)
+    * [Security](#security)
+  * [The Surface Plane](#the-surface-plane)
+* [Features](#features)
+   * [Existing Features](#existing-features)
+   * [Future Features](#future-features)
+* [Technologies](#technologies)
+* [Testing](#testing)
+* [Deployment](#deployment)
+    * [AWS S3](#aws-s3)
+    * [Heroku](#heroku)
+    * [Local Deployment](#local-deployment)
+* [Credits](#credits)
 
-Another blue button should appear to click: *Open Browser*.
+****
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Project Summary
 
-A blue button should appear to click: *Make Public*,
+Welcome to my Full Stack Frameworks with Django Project for Code Institute.
 
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+The goal of this project was to allow the user to create an account and make a purchase of products with Stripe. Although the majority of the admin activities is done through the Django admin site, the web app also provides more pleasant environment for common tasks such as adding, editing and deleting products or blog posts through the web app's UI.
+I chose to develop an ecommerce shopping website as it is a complex and flexible application which challenged my understanding of the technologies involved. Given the sensitivity involved in handling customer details 
+I had to approach development from a security conscious perspective.
