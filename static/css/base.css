@@ -151,7 +151,7 @@ span.badge.rounded-pill {
 }
 
 .cta-black, .cta-white:hover {
-    background-color: var(--color-brown);
+    background-color: var(--color-brown)!important;
     color: var(--color-white);
     text-decoration: none;
     border-radius: 0;
@@ -163,6 +163,10 @@ span.badge.rounded-pill {
     text-decoration: none;
     margin-right: .5rem;
     border-radius: 0;
+}
+
+.cta-comment:hover {
+    background-color: var(--color-brown)!important;
 }
 
 /*------ Homepage ------*/
@@ -696,7 +700,7 @@ input[type=text],input[type=email], select, textarea {
   border-radius: 0;
 }
 
-button {
+button, .cta-comment {
   background-color: var(--color-brown);
   color: white;
   text-transform: uppercase;
@@ -876,6 +880,10 @@ select option[value=""] {
 
 .profile-intro-p {
     font-size: 1.1rem;
+}
+
+.div-logout-form {
+    text-align: center;
 }
 
 /* Product Form */
