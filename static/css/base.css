@@ -139,6 +139,7 @@ span.badge.rounded-pill {
     text-transform: uppercase;
     padding: 15px 30px;
     border: var(--border-black);
+    border-radius: 0;
 
 }
 
@@ -146,12 +147,14 @@ span.badge.rounded-pill {
     background-color: var(--color-green);
     color: var(--color-white);
     text-decoration: none;
+    border-radius: 0;
 }
 
 .cta-black, .cta-white:hover {
     background-color: var(--color-brown);
     color: var(--color-white);
     text-decoration: none;
+    border-radius: 0;
 }
 
 .cta-green, .cta-green:hover {
@@ -159,6 +162,7 @@ span.badge.rounded-pill {
     color: var(--color-black);
     text-decoration: none;
     margin-right: .5rem;
+    border-radius: 0;
 }
 
 /*------ Homepage ------*/
@@ -575,6 +579,7 @@ footer p {
 
 .submit-button .cta-white {
     margin-right: 4rem;
+    border-radius: 0;
 }
 
 fieldset .form-control, #card-element {
@@ -697,17 +702,6 @@ button {
   text-transform: uppercase;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit] {
-  background-color: var(--color-brown);
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -853,8 +847,7 @@ select option[value=""] {
     text-decoration: underline;
 }
 
-.div-profile-form,  
-.div-logout-form, 
+.div-profile-form,   
 .div-password-reset-form {
     text-align: center;
 }
