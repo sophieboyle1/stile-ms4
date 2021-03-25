@@ -989,6 +989,13 @@ select option[value=""] {
     border-radius: .25rem;
 }
 
+.logo-font-banner {
+    font-size: 1.1rem;
+}
+
+.font-heading {
+    font-size: 2.1rem;
+}
 .col-sm-6 {
     padding: 0;
 }
