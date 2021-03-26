@@ -8,6 +8,7 @@ from .forms import PostForm
 
 
 def post(request):
+    """ Post A Blog """
     posts = Post.objects.all()
 
     template = 'blog/blog.html'
@@ -19,6 +20,7 @@ def post(request):
 
 
 def detail_post(request, slug):
+    """ Details on Blog Post """
     post = Post.objects.get(slug=slug)
 
     if request.method == 'POST':
@@ -41,6 +43,7 @@ def detail_post(request, slug):
 
 
 def category(request, slug):
+    """ Blog Categories """
     category = Category.objects.get(slug=slug)
 
     template = 'blog/blog_category.html'

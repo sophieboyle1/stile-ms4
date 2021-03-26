@@ -169,6 +169,12 @@ span.badge.rounded-pill {
     background-color: var(--color-brown)!important;
 }
 
+.cta-comment {
+    text-transform: uppercase;
+    padding: 10px 25px;
+    background-color: var(--color-brown);
+}
+
 /*------ Homepage ------*/
 
 .border-search {

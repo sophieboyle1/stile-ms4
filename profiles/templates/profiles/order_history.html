@@ -12,7 +12,7 @@
         </div>
     </div>
 </div>
-
+<!-- Breadcrumbs -->
 <div class="container">
     <div class="row shop-top-row">
         <div class="col-12">
@@ -28,7 +28,7 @@
         </div>
     </div>
 </div>
-
+<!-- Order history items -->
 <div class="container profile-container mb-1">
     <div class="row">
         <div class="col-12">
@@ -36,6 +36,7 @@
             <p class="profile-intro-p">
                 Below are all your recent purchases through this account, {{ user.username }}.
             </p>
+            <!-- No previous orders -->
             {% else %}
             <p class="profile-intro-p">
                 Looks like you haven't ordered anything yet, {{ user.username }}!
@@ -50,6 +51,7 @@
     </div>
 </div>
 
+<!-- Details of previous orders -->
 <div class="container mb-5">
     {% for order in orders %}
     <div class="container profile-container mt-4 mb-2 div-profile-order">

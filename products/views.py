@@ -76,7 +76,6 @@ def product_detail(request, product_id):
     # If user has reviewed an item
     try:
         item_review = Review.objects.filter(user=user, product=product)
-        # edit_review_form = ReviewForm(instance=item_review)
 
     except Review.DoesNotExist:
         edit_review_form = None
@@ -87,7 +86,6 @@ def product_detail(request, product_id):
         'product': product,
         'reviews': reviews,
         'review_form': review_form,
-        # 'edit_review_form': edit_review_form,
     }
 
     return render(request, template, context)
