@@ -900,7 +900,7 @@ select option[value=""] {
 }
 
 .div-logout-form {
-    text-align: center;
+    text-align: center!important;
 }
 
 /* Product Form */
