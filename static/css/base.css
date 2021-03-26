@@ -713,6 +713,24 @@ input[type=submit]:hover {
   background-color: var(--color-green);
 }
 
+.scroll-to-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 2.5%;
+    right: 5%;
+    width: 48px;
+    height: 48px;
+    border: 1px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fa-arrow-up:before {
+    width: 30%;
+    display: block;
+    margin: 17px auto;
+}
+
 /*------ Blog page ------*/
 
 .h2-style {
@@ -1088,18 +1106,20 @@ select option[value=""] {
     width:100%;
 }
 
-.div-profile-action-ctas {
+.div-profile-action-ctas, .shopping-cta, .checkout-cta {
     display: grid;
     margin-left: 1rem;
     margin-right: 0;
 }
 
-.div-profile-action-ctas .cta-white {
+.div-profile-action-ctas .cta-white, .shopping-cta, .checkout-cta {
     margin-left: 0;
     margin-top: 15px;
     width:100%;
 }
-
+.shopping-cta, .checkout-cta {
+    width: 80%;
+}
 
 .container {
     padding-right: 0px;
@@ -1171,6 +1191,10 @@ select option[value=""] {
     }
     .section-cta {
         padding: 5px 0px 30px;
+    }
+
+    .div-line-item {
+        margin-left: .4rem;
     }
 
 }
