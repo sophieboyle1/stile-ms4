@@ -31,7 +31,7 @@ The live website can be found [here](https://stile-boutique.herokuapp.com/)
 * [Testing](#testing)
 * [Deployment](#deployment)
     * [AWS S3](#aws-s3)
-    * [Heroku](#heroku)
+    * [Heroku Deployment](#heroku)
     * [Local Deployment](#local-deployment)
 * [Credits](#credits)
 
@@ -136,6 +136,72 @@ The website is designed using following technologies:
 * [AWS-S3](https://aws.amazon.com/s3/) – Object storage service that offers industry-leading scalability, data availability, security, and performance.
 
 # Deployment
+
+## AWS S3
+Created a new Amazon account and connect to amazon service AWS3 account are cloud based serve where the project media and staicfiles will be stored unto. At first, we locate S3 on amazon service then we create a bucket. While creating the bucket on S3, the note that public access must be all switched off to allow access for users.
+
+Once we've created the bucket, we now can now click on it's properties and enable the Static Website Hosting option, so it can serve the purpose of hosting our static files, you will need to imput an index.html and error.html before saving. Then we go into the created bucket Permissions and click into CORS configuration, this part already have a prefilled default config, All that is needed is just to write the default code and save the config.
+
+Then we go into the bucket policy to allows access to the contents across all web and inside this we will put in here some code including arn address displayed at the top of the heading. Then we go into amazon IAM to allow identity and access management of our stored files and folder. In the IAM service, we add a new group for our application and then we set the policies to ALL Then it generates a downlaodable zip file containing ID and KEY for us to use for the newly added group. This ID and KEY as to be stored in an environment variable.
+
+This then allows us to into our terminal window and install some settings Boto3 Django Storages
+
+The Django Storages is passed into the installed apps in settings and also a custom_storage file is created to store credentials in environment variable. And once everything looks fine we can run python3 manage.py collectstatic. This will collect all the static files in our app including any changes that is made. N.B this command has to be run in the development(local) environment each time a change is been made in the static files/folder And your folder and files should display in your AWS S3 BUCKETS
+
+## Heroku Deployment 
+
+#### Create application:
+
+1. Navigate to Heroku.com and login.
+2. Click on the new button.
+3. Select create new app.
+4. Enter the app name.
+5. Select region.
+
+#### Set up connection to Github Repository:
+
+1. Click the deploy tab and select GitHub - Connect to GitHub.
+2. A prompt to find a github repository to connect to will then be displayed.
+3. Enter the repository name for the project and click search.
+4. Once the repo has been found, click the connect button.
+
+#### Add PostgreSQL Database:
+
+1. Click the resources tab.
+2. Under Add-ons seach for Heroku Postgres and then click on it when it appears.
+3. Select Plan name Hobby Dev - Free and then click Submit Order Form.
+
+#### Set environment variables:
+
+1. Click on the settings tab and then click reveal config vars.
+2. Variables added: 
+    * AWS_ACCESS_KEY_ID 
+    * AWS_SECRET_ACCESS_KEY 
+    * DATABASE_URL 
+    * EMAIL_HOST_PASS 
+    * EMAIL_HOST_USER
+    * SECRET_KEY 
+    * STRIPE_PRICE_ID 
+    * STRIPE_PUBLIC_KEY 
+    * STRIPE_SECRET_KEY 
+    * STRIPE_WH_SECRET 
+    * USE_AWS 
+
+#### Enable automatic deployment:
+
+1. Click the Deploy tab
+1. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+
+## Local Deployment
+
+1. Navigate to the GitHub Repository.
+2. Click the Code drop down menu.
+3. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+4. Open your developement editor of choice and open a terminal window in a directory of your choice.
+5. Use the git clone command in terminal followed by the copied git URL.
+6. A clone of the project will be created locally on your machine.
+
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages: pip install -r requirements.txt
 
 # Credits
 
