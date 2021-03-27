@@ -178,7 +178,7 @@ span.badge.rounded-pill {
 /*------ Homepage ------*/
 
 .border-search {
-    border: no border;
+    border: none;
     margin-left: 2rem;
     width: 80%;
 }
@@ -240,7 +240,7 @@ span.badge.rounded-pill {
 }
 
 .homepage-cards, .homepage-cards-3 {
-    height: 400px;
+    height: 375px;
     margin-top: 2rem;
 }
 
@@ -292,7 +292,7 @@ span.badge.rounded-pill {
   .half-right {
     overflow: hidden;
     padding: 0;
-    position: responsive;
+    position: relative;
   }
   .half-left  > .container,
   .half-right > .container {
@@ -770,7 +770,7 @@ input[type=submit]:hover {
 }
 
 .add-comment {
-    padding: none !important;
+    padding: 0!important;
 }
 
 .nav-center-3 {
@@ -1234,6 +1234,18 @@ select option[value=""] {
     }
 }
 
+@media(min-width:992px) {
+    .about-image {
+    width: 100%;
+    height: 100%;
+}
+    .about-heading {
+    font-size: 2rem;
+    }
+    .about-text {
+    font-size: 1rem;
+    }
+}
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -1244,7 +1256,7 @@ select option[value=""] {
 
 @media (min-width: 1199px) {
     .header-content {
-    margin-top: 20%
+    margin-top: 20%;
     }
 
     .head-flowers {
@@ -1253,5 +1265,5 @@ select option[value=""] {
 
     .nav-center {
     padding-top: 0;
-}
+    }
 }
