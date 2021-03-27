@@ -92,9 +92,39 @@ In designing the page, I wanted for the user to have a positive experience and f
 
 ## The Structure Plane
 
+When the user arrives on site, it will see the hero image and text which invokes the purpose of the site. Below there are three cards for new decor products we have in stock with the title and price. Each card is clickable to the product details. Navigation is always on top of the screen and the sites name acts as a link to Home page.On smaller devices there is a link in the hamburger menu. There is also a link for each section of the website. Also, I have placed main links of the web-site in the footer section as I've seen it in almost all web-sites I have visited.
+
+Shop section is similar to every other web-shop. When they arrive at Shop, they will see all products available. I have put a drop down menu on the shop nav link to filter merchandise by four main categories. Products are presented as cards with images, name, short description and price. If user decides to view product, they willl see full name, full description, price and an option to add product to cart. If user adds to cart, they will see a message at the top of the page informing them that they have put that product with quantity X in their cart. I have included breadcrumbs to redirect the user back to all products page or home.
+
+The about page explains a little about the owners of the website with a paragraph to left of the image of the owners. The testimonal section contains a carousel with a image, the comment and the auther and for now includes three different testimonals.
+
+Blog page has an intro of the type of blogs the site will be submitting. Three images are placed below. Currently there are two blog posts which are in different categorys. The blogs contain a main image, a header, the date and time the blog was submitted and the information. The comment section below allows users to comment their thought on the blog and also give any tips they might want to add.
+
+In a cart section, users can see all the items in their cart and when they change the quantity of it, it shows instantly. Once user is ready for checkout, they will see a form which they have to fill in order for the checkout to be completed. Once completed, the order will be stored in Account > Order History and user can see it anytime.
+
+After every user input, submission, registration, login, comment, reply they are notified by a message from the web-site that briefly describes the action taken so that user knows their action was properly submitted.
+
 ## The Skeleton Plane
 
+### Wireframes
+
+Since this is a big project, I have decided to put wireframes in separate file.
+
+You can access them [here]().
+
+### Database Design
+
+### Security
+
+Using config variables in heroku, all SECRET access keys are stored safely to prevent unwanted connections to the database.
+
+Django allauth was used to set up user registration and built in decorators allowed restricted access to certain features on the website that are not intended for regular users.
+
 ## The Surface Plane
+
+### Colour Scheme
+
+My inspiration for my site was taken from a colour pallett found on [Coloors](https://coolors.co/palettes/trending).
 
 # Features
 
