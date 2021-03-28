@@ -1,7 +1,7 @@
 
 $('.btt-link').click(function (e) {
-    window.scrollTo(0, 0)
-})
+    window.scrollTo(0, 0);
+});
 
 $('#sort-selector').change(function () {
     var selector = $(this);
@@ -22,4 +22,4 @@ $('#sort-selector').change(function () {
 
         window.location.replace(currentUrl);
     }
-})
+});

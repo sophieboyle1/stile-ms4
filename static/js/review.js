@@ -1,8 +1,8 @@
-const starRating = document.querySelectorAll('.rating-stars')
+const starRating = document.querySelectorAll('.rating-stars');
 
 
     starRating.forEach(rating => {
-        const ratingValue = parseInt(rating.getAttribute('data-value'))
+        const ratingValue = parseInt(rating.getAttribute('data-value'));
         const fullStar = ratingValue;
         const emptyStar = 5 - fullStar;
         let stars = '';
@@ -15,5 +15,5 @@ const starRating = document.querySelectorAll('.rating-stars')
                 stars += `<i class="far fa-star"></i>`;
             }
         }
-        rating.innerHTML = stars
-    })
+        rating.innerHTML = stars;
+    });
