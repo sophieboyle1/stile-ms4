@@ -469,6 +469,11 @@ code is validated through [JS Hint](https://jshint.com/).
 
 * Python
 code is validated through [PEP8](http://pep8online.com/).
+
+## Issues
+* After I finished the demployment procedure I had an issue with connecting my static files. This is why you will see several `git commits` with "testing deployment" as I tried many different things. In the end I restarted the AWS process of making a new bucket and policy for my project and this seemed to work for me.
+
+
 # Deployment
 
 ## AWS S3
