@@ -1,21 +1,21 @@
 ## Summary
-* Responsiveness
-* Overall
-    * Navigation
-    * Carousel
-    * Button "Go to top"
-    * Footer
-* Home
-* Shop
-* Comments
-* Cart & Checkout
-* Reviews
-* Account
-    * Registration
-    * Sign In
-    * Profile
-    * Orders
-    * Log out
+* [Responsiveness](#responsiveness)
+* [Overall](#overall)
+    * [Navigation](#navigation)
+    * [Carousel](#Carousel)
+    * [Button "Go to top"](#button-go-to-top)
+    * [Footer](#footer)
+* [Home](#home)
+* [Shop](#shop)
+* [Comments](#comments)
+* [Cart & Checkout](#cart-checkout)
+* [Reviews](#reviews)
+* [Account](#account)
+    * [Registration](#registration)
+    * [Sign In](#sign-in)
+    * [Profile](#profile)
+    * [Orders](#orders)
+    * [Log out](#log-out)
 
 **Back to [Readme.md](README.md)**
 
@@ -152,9 +152,7 @@ This site was was tested on multiple browsers (Google Chrome, Mozzila Firefox an
 | clicking on `Shop` button | Shows "Shop" page | As Expected | Pass
 | Clicking on `log Out` button | Logs out user and redirects to index page | As expected | Pass |
 
-
-
-
+**Back to [Top](testing.md)**
 
 
 
