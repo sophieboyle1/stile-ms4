@@ -126,11 +126,190 @@ Django allauth was used to set up user registration and built in decorators allo
 
 My inspiration for my site was taken from a colour pallett found on [Coloors](https://coolors.co/palettes/trending).
 
+![colour](readme/images/colour-pallet.png)
+
+I loved the contrast of the browns and greens so I decided to go with the following colours in my project.
+
+* The darker green used throughout the site is #354F52.
+* I used a light green to compliment the darker green #E6EFD6.
+* The brown shade used to give contrast is #8D6346. 
+
+### Typography
+
+The main font used throughout the website is 'Playfair Display'. The cursive text I used to give contrast and compliment this font is 'Great Vibes'.
+
+### Images
+
+I used different websites for inspiration and images on my homeware site:
+* [Unsplash](https://unsplash.com/)
+* [Anthropologie](https://www.anthropologie.com/?ref=logo)
+* [Nook Home](https://www.nookhome.ie/OUR-SHOP/)
+* [Maisons](https://www.maisonsdumonde.com/UK/en?awc=7512_1614608739_df38ef9cbc28502edce263f7d26b59ab&utm_source=awin_uk&utm_medium=affiliation&utm_campaign=generique&utm_content=The%20Telegraph)
+
 # Features
 
 ## Existing Features
 
+Web App Sections:
+* Navigation bar
+    * Navigation bar is visible on all pages and on all sizes (on a smaller width, it toggles into "hamburger"). It contains web-site logo and a set of links for each section and subsection of web-site.
+
+* Footer section
+    * Footer section contains three sections, the first section links to different sections of web-site, the section contains the stores location and the final section gives users the option to stay up to date with the app via links to social media profiles.
+
+* Webshop
+    * Standard e-commerce feed of products with the option to sort products and filter them by category name and price. Every product can be added to the cart immediately and links to a product page where the user can read more about it, including picture of product, name, description, price and an add button if they would like to add product.
+
+* About page
+    * Gives information on the two owners of the website. Testimonals are below in a carousel.
+
+* Blog
+    * A section containing all the blog posts with the focus on DIY projects a user can re-create from their own home.
+
+* User account 
+    * Available to registered/logged in users with the purpose of tracking their order history and safely storing shipping details for a smooth checkout.
+
+* Admin account
+    * Available users with admin rights with the purpose of having access to the orders, user profiles, as well as product and blog inventory. Majority of the information is stored in the Django admin site but the users can also do common tasks such as adding, editing and deleting products or blog posts through the site.
+
+## Features and Django Apps
+
+STILE, [A Django project](https://docs.djangoproject.com/en/3.1/ref/applications/), consists of 9 Django applications listed below. As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be reused in various projects.
+
+* `about`
+* `bag`
+* `blog`
+* `checkout`
+* `contact`
+* `home`
+* `products`
+* `profiles`
+* `reviews`
+
+The following list of features is structured in a way that should help with understanding how the features are spread throughout the project.
+
+### Search functionality
+
+* A Search box is part of the top navigation and is, therefore, accessible on all pages.
+* On mobile and ipad the search bar is collapsed under the search symbol.
+* It allows customers to enter keywords associated with the products they wish to purchase.
+* The search results are displayed as a feed of products by using the page templates prepared for the `products` Django app.
+![search](readme/images/search-1.png)<br>
+![search](readme/images/search-2.png)
+
+### Breadcrumbs
+
+* Breadcrumbs are present throughout the `products` (i.e. webshop), `cart` and `checkout` Django apps and, additionally, throughout the `profiles` app.
+
+* The purpose of this feature is to ease the navigation across STILE only where navigation links might not be as helpful. Therefore, breadcrumbs don't appear on every webpage.
+
+### Toasts
+
+* Small snippets of messages divided into 4 main categories: `toast_success`, `toast_info`, `toast_warning` and `toast_error`.
+* They appear on every page whenever a certain action has been done by the user.
+* Their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, editing a blog post, finishing the checkout process, etc.
+
+### Django-allauth feature
+
+* `django-allauth` is a Python package. As written in the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
+* It provides a set of features such as **signup**, **login**, **logout** and **password change**
+* After signing up, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app.
+* The links to these features can be found in the navigation, under the **My Account** dropdown menu, as well as on the pages and throughout the web app.
+
+### Automatic e-mails
+
+* An account is working for this project and used as a sender for all verification, reset and confirmation e-mails.
+* For example, users receive an order confirmation e-mail after a purchase, account verification e-mail after the registration, password reset e-mail after requesting a password reset, etc.
+
+### Home app
+
+* `home` Django app mainly serving as an introduction to the company and the marketplace.
+* Another feature on the home page is the new arrivals section, this section contains 3 pictures of the newest products that are clickable links to the full details of the products.
+
+### About app
+
+* `about` Django app contains an image and an about paragraph explaining the background of the owners of the store.
+* Below this there is a testimonals carousel where three different users have left a comment.
+
+### Blog app
+
+* `blog` Django app mostly relies on textual content and can be split into 3 parts - **blog**, **blog posts** and **admin blog management activities**.
+* This is a very simple blog feature whose purpose it to give customers more than just a shopping experience while navigating through STILE.
+* Blog displays short introductions to all available blog posts and links to them.
+* Admin blog management activities include adding, editing and deleting blog entries. Users with admin rights can do that directly in the UI through forms.
+
+![blog](readme/images/add-blog.png)<br>
+![blog](readme/images/edit:delete-blog.png)
+
+### Products app
+
+* `products` Django app is where all the logic and templates connected to the product feed and individual products are.
+* It can be divided into three main sections: **shop**, **product pages** and **admin product management activities**.
+* **Shop** is the main feed of products and this is where the majority of shopping journeys are expected to start. The shopping experience is enhanced by having a dropdown for sorting products (A-Z, Z-A, price low-high, price high-low),
+* By clicking on a product, user can see the full product info including pictures of product, name, description, price and an add button if they would like to add product.
+* **Admin product management** activities include adding, editing and deleting products. Users with admin rights can do that directly in the UI through forms.
+
+![product](readme/images/product.png)
+
+### Bag app
+
+* `bag` Django app is a standard e-commerce functionality which aids the checkout process.
+* A cart is always present in the top right corner of the web app. The bag adds a number symbol beside the cart letting the user know how many items they currently have in their bag.
+* Users can edit quantity of items or remove them from cart and see price total amount. In order to proceed with checkout, user will be required to register on the site. When user decides to finish shopping, they will need to input their information and credit card details so that purchase can be completed.
+* If users try to access their empty carts, there will be a message displayed that nothing has been added yet and encourage them to go to the shop.
+
+![cart](readme/images/cart.png)
+
+### Checkout app
+
+* `checkout` Django app is another standard e-commerce functionality which enables users to buy the products online from the webshop.
+* In order to check out, the user is presented with a form asking for the shipping and payment details and with the overview of the order.
+* Users can easily go back to the cart and adjust it by clicking on the cart in the top right corner or breadcrumbs in the top left corner.
+* A webhook is implemented to the checkout so that the order is successfully processed in case the checkout process gets interrupted. Some reasons might be closing the browser too soon or losing internet connection.
+* "payments" are handled through `stripe`. A test purchase can be made with the following details:
+    * credit card: 4242 4242 4242 4242
+    * expiration date: 04 / 24
+    * CVC: 424
+    * ZIP: 42424
+* After the payment has been processed, the user is presented with the order summary on the order confirmation page.
+* logged in buyers can also see their **order history** on the `profiles pages`.
+
+### Profiles app
+
+* `profiles` Django app is available to registered, authenticated users.
+* It offers 2 features: order history and saving shipping information.
+* **Order history** displays all previous orders per user account.
+* Saving shipping information is done through a form which can be edited anytime. This information is what populates the checkout form for the next orders and where shipping information saved during the checkout process is stored.
+
+###  Reviews app
+* `reviews` Django app is available to registered, authenticated users.
+* The user also has the option to edit or delete their review after they have submitted a review.
+* The stars rating allows the user to give a rating between 1 - 5 stars.
+
+![review](readme/images/review.png)
+
+### Contact app
+
+* `contact` Django app is available to all users if you have created an account or not. I wanted to make it vert accessible for anybody to contact the store with any questions they might have.
+* Leaflet is the form of google maps I used to show the user exactly where the store is located.
+
 ## Future Features
+
+### Save for later
+
+* A feature that allows authenticated users to save items for later.
+* Every product in the feed and on product pages would have a heart-shaped icon which would add the product on a list. The list could be accessed on one of the profiles pages, where users can remove the items from the list as well.
+
+### Cart keeps items after logging out
+
+* A simple feature which would store what the user had in the cart before logging out.
+* In combination with toasts, it could act as a reminder of what the user's last shopping-related action was.
+* The main goal of this feature is to increase the conversion rate.
+
+### Voting on blog posts and products in blog posts
+
+* Additional feature would be a simple voting structure to indicate how many people have liked a certain piece of content.
+* Lastly, it would be great to be able to feature some of the products in the blog posts to increase the conversion rate.
 
 # Technologies
 
