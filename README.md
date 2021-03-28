@@ -110,7 +110,7 @@ After every user input, submission, registration, login, comment, reply they are
 
 Since this is a big project, I have decided to put wireframes in separate file.
 
-You can access them [here]().
+You can access them [here](wireframes.md).
 
 ### Database Design
 
