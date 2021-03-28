@@ -452,6 +452,23 @@ The website is designed using following technologies:
 * [Heroku](https://dashboard.heroku.com/) - Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps.
 * [AWS-S3](https://aws.amazon.com/s3/) – Object storage service that offers industry-leading scalability, data availability, security, and performance.
 
+# Testing
+
+**Testing section is located [here](testing.md)**
+
+### Validating code
+
+* HTML
+code is validated through [W3 validator](https://validator.w3.org/).
+
+* CSS
+code is validated through [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
+
+* JavaScript
+code is validated through [JS Hint](https://jshint.com/).
+
+* Python
+code is validated through [PEP8](http://pep8online.com/).
 # Deployment
 
 ## AWS S3
