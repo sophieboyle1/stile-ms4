@@ -522,6 +522,30 @@ Once the project has been loaded into an IDE of choice, run the following comman
 
 # Credits
 
+## Content
+
+* Product items, names, images and descriptions were taken from the following websites:
+    * [Nook Home](https://www.nookhome.ie/OUR-SHOP)
+    * [Anthropologie](https://www.anthropologie.com/?ref=logo)
+    * [Maisons](https://www.maisonsdumonde.com/UK/en?awc=7512_1614608739_df38ef9cbc28502edce263f7d26b59ab&utm_source=awin_uk&utm_medium=affiliation&utm_campaign=generique&utm_content=The%20Telegraph)
+
+* Some images were taken from [Pixabay](https://pixabay.com/)
+* Videos from Code Institute
+
+## Coding Sources
+
+* I read this [article](https://dev.to/radualexandrub/how-to-create-a-comment-section-for-your-django-blog-3egp) from dev.to to help me understand the concept of making a comments section.
+* The testimonals content for the about page was taken from [freefrontend.com](https://freefrontend.com/bootstrap-testimonials/)
+* I found this article from [Codementor](https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a) which helped me to understand how to make a review section on the product detil page.
+
+## Acknowledgments
+
+* My tutor Roman at the Kerry ETB for all the support he gives daily.
+* I'd like to thank my mentor Spencer Barriball for his patience and guidance throughout my project.
+* All at Code Institute and Tutor support.
+
+**This is for educational use.**
+
 
 
 
